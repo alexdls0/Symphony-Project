@@ -1,0 +1,21 @@
+{% if activeitem.videos %}
+    {% for item in activeitem.videos %}
+    <div class="item-row" data-id="{{ item.id }}">
+        <div class="thumb-slide content-item" style="background-image: url({{item.thumbsrc}});">
+            <a href="{{ path('capsule_vid', {'vid' :item.id }) }}"></a>
+        </div>
+        <div class="info-item">
+            <p class="item-title">{{ videotitle( item ) }}</p>
+            <p class="item-summary">{{ item.descripcion }}</p>
+        </div>
+        <div class="time align-right">
+        </div>
+    </div>
+    {% endfor %}
+{% else %}
+    <div class="not-found">
+        <div class="bg-fade">
+            <p>{{'Oops, this might not be what you were looking for'|trans}}</p>
+        </div>
+    </div>
+{% endif %}

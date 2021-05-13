@@ -1,0 +1,186 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'User Account'|trans}} | Capsule{% endblock %}
+
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="firstScreen accountPage" id="firstScreen">
+            {% include 'common/nav-logged.html.twig' %}
+            <div class="account-tab-header">
+                <div><h1 class="tab-header active" data-tab="tab-1">{{'ACCOUNT'|trans}}</h1></div>
+                <div><h1 class="tab-header" data-tab="tab-3">{{'BILLING'|trans}}</h1></div>
+                <div><h1 class="tab-header" data-tab="tab-4">{{'HISTORY'|trans}}</h1></div>
+            </div>
+            <div class="tab-content active" id="tab-1">
+                <div class="tab-wrapper">
+                    <div class="col-account">
+                        <div class="title"><h1>{{'Account details'|trans}}</h1></div>
+                        <div class="account-form">
+                            <form id="js-validateForm" action="{{ path('capsule_account') }}" method="post">
+                            {{ form_start(accountForm) }}
+                                {{ form_row(accountForm.correo) }}
+                                {{ form_row(accountForm.nombre) }}
+                                {{ form_row(accountForm.apellidos) }}
+                                {{ form_row(accountForm.locale) }}
+                                {{ form_row(accountForm.videolang) }}
+                                {{ form_row(accountForm.sendPassword) }}
+                                <button type="submit" class="btn btn-capsule">{{'Save settings'|trans}}</button>
+                            {{ form_end(accountForm) }}
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-account">
+                        <div class="title"><h1>{{'Account stats'|trans}}</h1></div>
+                        {% if premium and premium.status %}
+                        <div class="account-info">
+                            <h2 class="align-right">{{premium.status}}</h2>
+                            <span>{{'Premium advantages'|trans}}</span>
+                        </div>
+                        {% endif %}
+                        <div class="account-info">
+                            <h2 class="align-right">{{app.user.fechanac|date('F j, Y')}}</h2>
+                            <span>{{'Birthdate'|trans}}</span>
+                        </div>
+                        <div class="account-info">
+                            {% if premium and premium.days %}
+                                <h2 class="align-right">{{premium.days}}</h2>
+                                {% if premium.days < 0 %}
+                                    <span>{{'Days without subscription'|trans}}</span>
+                                {% else %}
+                                    <span>{{'Remaining premium days'|trans}}</span>
+                                {% endif %}
+                            {% else %}
+                                <h2 class="align-right">{{'Never'|trans}}</h2>
+                                <span>{{'Premium subscription'|trans}}</span>
+                            {% endif %}
+                        </div>
+                        <div class="account-info">
+                            <h2 class="align-right">{{app.user.fechaalta|date('F j, Y')}}</h2>
+                            <span>{{'Registration date'|trans}}</span>
+                        </div>
+                    </div>
+                    <div class="col-account m-padding-top">
+                        <div class="xs-padding-left b-left">
+                            {% if dbstatus %}
+                                <p class="advice">
+                                    &check;{{'Changes saved.' |trans}}
+                                </p>
+                            {% endif %}
+                            <h2 class="nickname">@{{app.user.apodo}}</h2>
+                            <p class="advice">{{'
+                                you can change your account details here. If you have 
+                                any questions, please contact us at '|trans}}
+                                <a class="mail-direction" href="mailto:help@capsule.com">
+                                    help@capsule.com
+                                </a>
+                            </p>
+                            <p>
+                                <a href="{{ path( 'capsule_account_deactivate' ) }}" class="margined mail-direction">{{'Deactivate account'|trans}}</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="tab-content" id="tab-3">
+                <div class="xs-padding-left b-left">
+                    <h2 class="nickname">@{{app.user.apodo}}</h2>
+                    <p class="advice">
+                        {{'Your billing register is shown here'|trans}}
+                    </p>
+                    <br>
+                    <a class="mail-direction xs-margin-bottom" href="{{path('capsule_account_billing' )}}">
+                        {{'See the full billing register'|trans}}
+                    </a>
+                    
+                    <p> </p>
+                    {% if notifypremium(app.user.fechapremium) %}
+                        <p><span class="important-data">{{'You are a premium user.'|trans}}</span></p>
+                    {% else %}
+                        <a href="{{ path( 'capsule_pay' ) }}" class="btn-capsule btn-small margined">{{'Buy premium'|trans}}</a>
+                    {% endif %}
+                </div>
+                <div class="history-wrapper">
+                    
+                    {% if not payments %}
+                        <p class="advice">
+                            {{"You don't have any billing register yet"|trans}}
+                        </p>
+                    {% else %}
+                        {% for payment in payments %}
+                            {% include 'common/item-row-billing.html.twig' %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="tab-content" id="tab-4">
+                <div class="xs-padding-left b-left">
+                    {% if dbstatus %}
+                        <p class="advice">
+                            &check;{{'Changes saved.'|trans}}
+                        </p>
+                    {% endif %}
+                    <h2 class="nickname">@{{app.user.apodo}}</h2>
+                    <p class="advice">
+                        {{'You can go over your video history and edit it'|trans}}
+                    </p>
+                    <p>
+                    <a class="mail-direction" href="{{path('capsule_account_history' )}}">
+                        {{'See the full history'|trans}}
+                    </a>
+                    </p>
+                </div>
+                <div class="history-wrapper">
+                    {% if not videostats %}
+                        <p class="advice">
+                            {{'You have not watched anything yet, '|trans}}
+                            <a class="mail-direction" href="{{path('capsule_dashboard')}}">
+                                {{'what are you waiting for?'|trans}}
+                            </a>
+                        </p>
+                    {% else %}
+                        {% for evid in videostats %}
+                            <div class="item-row" data-eid="{{evid.id}}">
+                                <div class="thumb-slide content-item" style="background-image: url({{ evid.video.thumbsrc }});">
+                                    <a href="{{ path('capsule_vid', {'vid' : evid.video.id }) }}"></a>
+                                    <div class="progressbar">
+                                        <div class="back"></div>
+                                        <div class="front" style="width: {{evid.porcentaje}}%;"></div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <p class="item-title">{{ videotitle(evid.video) }}</p>
+                                    <p class="item-summary">{{ evid.video.descripcion }}</p>
+                                </div>
+                                <div class="time align-right">
+                                    <p>{{ evid.porcentaje }}%</p>
+                                    <p>{{ evid.tiempo|date('H:i:s') }} - {{ evid.tiempototal|date('H:i:s') }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            
+        </div>
+        {% include 'common/footer.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{asset('/assets/js/jquery-val/jquery.validate.min.js')}}"></script>
+    <script>
+        $("#js-validateForm").validate();
+    </script>
+{% endblock %}

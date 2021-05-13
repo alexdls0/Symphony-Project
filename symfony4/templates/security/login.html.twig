@@ -1,0 +1,194 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Login'|trans}} | {{'Capsule'|trans}}{% endblock %}
+{% block stylesheets %}
+    <link href="{{asset('assets/css/login.css')}}" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div id="mySidemenu" class="sidemenu">
+        <a href="javascript:void(0)" class="close" id="burgerClose">&times;</a>
+        <img src="assets/img/logo-simple.png" class="logo-side">
+        <div class="form-login">
+            <form id="js-validateForm" action="{{ path('capsule_log') }}" method="post">
+                {% if error is not null %}
+                    <div class="swal2-icon swal2-error swal2-animate-error-icon" 
+                        style="display: flex;">
+                        <span class="swal2-x-mark">
+                            <span class="swal2-x-mark-line-left"></span>
+                            <span class="swal2-x-mark-line-right"></span>
+                        </span>
+                    </div>
+                    <p class="feedback-user feedback-error">
+                        {{ error.messageKey|trans(error.messageData, 'security') }}
+                    </p>
+                {% endif %}
+                {% if passreset %}
+                    <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+                        <span class="swal2-success-line-tip"></span>
+                        <span class="swal2-success-line-long"></span>
+                        <div class="swal2-success-ring"></div> 
+                    </div>
+                    <p class="feedback-user feedback-success">
+                        {{'Password has been changed correctly'|trans}}
+                    </p>
+                {% endif %}
+                {% if activated %}
+                    <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+                        <span class="swal2-success-line-tip"></span>
+                        <span class="swal2-success-line-long"></span>
+                        <div class="swal2-success-ring"></div> 
+                    </div>
+                    <p class="feedback-user feedback-success">
+                        {{'Your account has been activated'|trans}}
+                    </p>
+                {% endif %}
+                <h1 class="h3 mb-3 font-weight-normal">{{'Log in'|trans}}</h1>
+                <label for="inputApodo" class="sr-only">{{'Nickname'|trans}}</label>
+                <input type="text" value="{{ last_username }}" name="apodo" id="inputApodo" class="form-control" placeholder="{{'Nickname'|trans}}" required autofocus>
+                <label for="inputPassword" class="sr-only">{{'Password'|trans}}</label>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="{{'Password'|trans}}" required>
+                <input type="hidden" name="_csrf_token"
+                       value="{{ csrf_token('authenticate') }}"
+                >
+                <!--
+                {#
+                    Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                    See https://symfony.com/doc/current/security/remember_me.html
+            
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" name="_remember_me"> Remember me
+                        </label>
+                    </div>
+                #}
+                -->
+                <button class="btn btn-lg btn-primary" type="submit">
+                    {{'ENTER'|trans}}
+                </button>
+            </form>
+            <div id="accordion">
+                <h3>{{'Recover Password'|trans}}</h3>
+                <div class="first">
+                    <div id="js-emailReplace">
+                        <p class="text-muted">{{'Enter your Email and the instructions will be sent to you!'|trans}}</p>
+                        <input type="email" required id="js-recoverInput" placeholder="{{'Email'|trans}}">
+                    </div>
+                    <button class="disabled-bt" id="js-recoverSend" type="submit">{{'Send'|trans}}</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="wrapper login-page" id="wrapper">
+        <div class="firstScreen" id="firstScreen">
+            {% include 'common/nav-notlogged.html.twig' %}
+            <div class="slide-container">
+                <div class="slide1">
+                    <div class="bg-fade">
+                        <div class="discover">
+                            <img src="assets/img/mr.robot.png" class="logo-item">
+                            <p>{{'and much more in Capsule'|trans}}</p>
+                            <a href="#afterFirstScreen">
+                                &#8595;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="bg-fade">
+                        <div class="discover">
+                            <img src="assets/img/stlogo.png" class="logo-item">
+                            <p>{{'and much more in Capsule'|trans}}</p>
+                            <a href="#afterFirstScreen">
+                                &#8595;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="bg-fade">
+                        <div class="discover">
+                            <img src="assets/img/bateslogo.png" class="logo-item">
+                            <p>{{'and much more in Capsule'|trans}}</p>
+                            <a href="#afterFirstScreen">
+                                &#8595;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="afterFirstScreen" id="afterFirstScreen">
+            <div class="itemswrapper">
+                <div class="itemcontent">
+                    <p>{{'Star Wars'|trans}}</p>
+                </div>
+                <div class="itemcontent">
+                    <p>{{'Stranger Things'|trans}}</p>
+                </div>
+                <div class="itemcontent">
+                    <p>{{'Narcos'|trans}}</p>
+                </div>
+                <div class="itemcontent">
+                    <p>{{'Peaky Blinders'|trans}}</p>
+                </div>
+                <div class="itemcontent">
+                    <p>{{'True Detective'|trans}}</p>
+                </div>
+                <div class="fade"></div>
+            </div>
+            <div class="plan-area">
+                <h1>{{'Just try Capsule for 2 months'|trans}}</h1>
+                <p>{{'no credit card required during the free trial'|trans}}</p>
+                <div class="plan-container">
+                    <div class="plan-c">
+                        <div class="plan">
+                            <h2>{{'Free account'|trans}}</h2>
+                            <ul>
+                                <li>{{'Enjoy full seasons of your favourites tv shows.'|trans}}</li>
+                                <li>{{'Media in HD resolution'|trans}}</li>
+                                <li>{{'Hundreds of movies and series!'|trans}}</li>
+                                <li>{{'Free forever'|trans}}</li>
+                            </ul>
+                            <p class="price">0€</p>
+                        </div>
+                        <a href="{{ path('capsule_register') }}" class="register">{{'REGISTER'|trans}}</a>
+                    </div>
+                    <div class="plan-c">
+                        <div class="plan">
+                            <h2>{{'Premium'|trans}}</h2>
+                            <ul>
+                                <li>{{'All the base plan features'|trans}}</li>
+                                <li>{{'Media up to 4k HD resolution'|trans}}</li>
+                                <li>{{'Hundreds of movies and series!'|trans}}</li>
+                                <li>{{'Switch plans or cancel anytime'|trans}}</li>
+                            </ul>
+                            <p class="price">0€</p>
+                            <p class="small">{{' + 2 month free'|trans}}</p>
+                        </div>
+                        <a href="{{ path('capsule_register', {'promo': '1'}) }}" class="register">{{'REGISTER'|trans}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'common/footer.html.twig' %}
+    </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+
+    <script src="{{asset('assets/js/jquery-val/jquery.validate.min.js')}}"></script>
+    <script>
+        $("#js-validateForm").validate();
+    </script>
+    <script src="{{ asset( 'assets/js/login-pwrecovery.js' ) }}"></script>
+
+{% endblock %}

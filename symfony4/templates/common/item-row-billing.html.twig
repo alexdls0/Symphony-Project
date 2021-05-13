@@ -1,0 +1,18 @@
+<div class="item-row billing-row">
+    <div class="thumb-slide content-item not-clickable" 
+        style="background-image: url('{{asset('assets/img/payment.png')}}');">
+        
+    </div>
+    <div class="info-item">
+        <p class="item-title">{{ payment.fecha|date('Y-m-d') }}</p>
+        <p><strong>{{'Credit Card'|trans}}<br></strong>{{ payment.getNumerotarjetaMask }}</p>
+        <p><strong>{{'Name'|trans}}<br></strong>{{ payment.nombretitular }}</p>
+        <p><strong>{{'Surnames'|trans}}<br></strong>{{ payment.apellidotitular }}</p>
+    </div>
+    <div class="time align-right">
+        <div class="account-info">
+            <h2 class="align-right">{{payment.importe}}€</h2>
+            <span>{{'price'|trans}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+
+{% if min is not defined %}
+    <a href="{{path('capsule_log')}}">
+        <img src="assets/img/logo-simple.png" class="logo-page">
+    </a>
+    <div class="nav">
+        <ul>
+            <li class="bignav">
+                <a class="burger" id="burger">
+                    {{'Login'|trans}}
+                    <img src="{{asset('assets/img/login-button.png')}}">
+                </a>
+            </li>
+        </ul>
+    </div>
+{% else %}
+    <a href="{{path('capsule_dashboard')}}">
+        <img src="{{asset('assets/img/logo-bg.png')}}" class="logo-page">
+    </a>
+{% endif %}

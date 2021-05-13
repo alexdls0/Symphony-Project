@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Payment'|trans}} | Capsule{% endblock %}
+
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="firstScreen accountPage" id="firstScreen">
+            {% include 'common/nav-logged.html.twig' %}
+            <div class="account-tab-header">
+                <div><h1 class="tab-header active" data-tab="tab-1">{{'PAYMENT'|trans}}</h1></div>
+            </div>
+            <div class="tab-content active" id="tab-1">
+                <div class="tab-wrapper">
+                    <div class="xs-padding-left b-left">
+                        <h2 class="nickname">@{{app.user.apodo}}</h2>
+                        <p class="advice">
+                            {{'please, slide to select your plan and fill the form.'|trans}}
+                        </p>
+                    </div>
+                    <div class="account-tab-header payment-tab-header">
+                        <div><h1 class="tab-header active" data-tab="tab-1"></h1></div>
+                        <div><h1 class="tab-header"></h1></div>
+                        <div><h1 class="tab-header"></h1></div>
+                        <div><h1 class="tab-header"></h1></div>
+                    </div>
+                    <div class="col-account col-account-2">
+                        <div class="title"><h1>{{'Data'|trans}}</h1></div>
+                        <div class="account-form payment-form payment-form-hide">
+                            <form id="js-validateForm" action="{{ path('capsule_pay') }}" method="post">
+                            {{ form_start(paymentForm) }}
+                                {{ form_row(paymentForm.plan) }}
+                                {{ form_row(paymentForm.correo) }}
+                                {{ form_row(paymentForm.nombretitular) }}
+                                {{ form_row(paymentForm.apellidotitular) }}
+                                {{ form_row(paymentForm.numerotarjeta) }}
+                                {{ form_row(paymentForm.cvv) }}
+                                {{ form_row(paymentForm.expiracion) }}
+                                <button type="submit" class="btn btn-capsule btn-small">{{'Proceed'|trans}}</button> 
+                            {{ form_end(paymentForm) }}
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-account">
+                        <div class="title"><h1>{{'Total'|trans}}</h1></div>
+                        <div class="account-info">
+                            <h2 class="align-right" id="js-priceDisplay"></h2>
+                            <span>€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'common/footer.html.twig' %}
+    </div>
+    
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $('.js-payerName').val('{{app.user.nombre}}');
+        $('.js-payerSurname').val('{{app.user.apellidos}}');
+        $('.js-payerEmail').val('{{app.user.correo}}');
+    </script>
+    <script src='/assets/js/paypage/init.js' defer></script>
+    <script src="{{asset('/assets/js/jquery-val/jquery.validate.min.js')}}"></script>
+    <script>
+        $("#js-validateForm").validate();
+    </script>
+    
+{% endblock %}

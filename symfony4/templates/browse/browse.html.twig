@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Search'|trans}} | Capsule{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        {% include 'common/nav-logged.html.twig' %}
+        <div class="afterFirstScreen browsePage" id="afterFirstScreen">
+            <div class="search-browse-container">
+                <div class="search-browse">
+                    <input id="js-searchNameField" type="text" name="search-name" value="{{search_term}}">
+                </div>
+                <div class="bt-container">
+                    <button id="js-searchNameActive"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="browseContent">
+                <div class="conf">
+                    <div class="browse-filters">
+                        <div class="filter-group">
+                            <div class="filter-row">
+                                <span>{{'Type'|trans}}</span>
+                                <select id="js-typeSel">
+                                    <option selected value="ALL" data-limit="0">{{'All content'|trans}}</option>
+                                    <option value="EP" data-limit="0">{{'Episodes'|trans}}</option>
+                                    <option value="SH" data-limit="1">{{'Shows'|trans}}</option>
+                                    <option value="SG" data-limit="1">{{'Sagas'|trans}}</option>
+                                    <option value="MV" data-limit="0">{{'Movies'|trans}}</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-row">
+                                <span>{{'Order Results'|trans}}</span>
+                                <select id="js-orderSel">
+                                    <option selected value="DATE">{{'Date added'|trans}}</option>
+                                    <option value="ALP">{{'Alphabetical A-Z'|trans}}</option>
+                                    <option value="RALP">{{'Alphabetical Z-A'|trans}}</option>
+                                    <option value="RDATE">{{'Recording date'|trans}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group js-hideOptions">
+                            <div class="filter-row">
+                                <label for="search-age">{{'Age rating'|trans}}</label>
+                                <input id="js-agerangeLoad" type="number" name="search-age" value="0" min="0" max="21">
+                            </div>
+                            <div class="filter-row">
+                                <label for="search-premium">{{'Premium Only'|trans}}</label>
+                                <input type="checkbox" id="js-premiumLoad" name="search-premium" value="1"/>
+                            </div>
+                            <div class="filter-row">
+                                <label for="search-complete">{{'Complete Only'|trans}}</label>
+                                <input id="js-completeLoad" type="checkbox" name="search-complete" value="1"/>
+                            </div>
+                            <div class="filter-row">
+                                <label for="search-watching">{{'Watching'|trans}}</label>
+                                <input id="js-watchingLoad" type="checkbox" name="search-watching" value="1"/>
+                            </div>
+                        </div>
+                        <div class="filter-group js-hideOptions">
+                            {% if catlist %}
+                            <div class="filter-col">
+                                <span>{{'Categories'|trans}}</span>
+                                <select class="select2" name="js-categLoad" id="js-categList" multiple="multiple" style="width: 100%">
+                                    {% for c in catlist %}
+                                        <option value="{{c.id}}">{{ c.titulo }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="filter-group js-hideOptions">
+                            {% if dirlist %}
+                                <div class="filter-col">
+                                    <span>{{'Directors'|trans}}</span>
+                                    <select class="select2" name="js-categLoad" id="js-dirList" multiple="multiple" style="width: 100%">
+                                        {% for director in dirlist %}
+                                            <option value="{{director.id}}">{{ director.titulo }}</option>
+                                        {% endfor %}
+                                    </select>  
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="filter-group js-hideOptions">
+                            {% if prodlist %}
+                                <div class="filter-col">
+                                    <span>{{'Producers'|trans}}</span>
+                                    <select class="select2" name="js-prodLoad" id="js-prodList" multiple="multiple" style="width: 100%">
+                                        {% for productor in prodlist %}
+                                            <option value="{{productor.id}}">{{ productor.titulo }}</option>
+                                        {% endfor %}
+                                    </select>  
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="browse-results clearfix">
+                    <div class="browse-results-container " id="js-resultsSection">
+                    </div>
+                </div>
+                
+            </div>
+            <div style="flex: 1 0;" id="js-paginatorSection">
+            </div>
+        </div>
+        {% include 'common/footer.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{asset('assets/js/select2.min.js')}}"></script>
+    <script src="{{asset('assets/js/browsepage/search.js')}}"></script>
+{% endblock %}

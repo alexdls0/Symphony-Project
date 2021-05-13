@@ -1,0 +1,15 @@
+{% if contentlist %}
+    {% for video in contentlist %}
+        <div class="content-item" style="background-image:url('{{ video.thumbsrc }}');">
+            <a href="{{ (video.grupo) ? path(video.grupo.getRoute(), {'id' : video.grupo.id }) : path('capsule_vid', {'vid' : video.id }) }}">
+                <p>{{ videotitle(video) }}</p> 
+            </a>
+        </div>
+    {% endfor %}
+{% else %}
+<div class="not-found">
+    <div class="bg-fade">
+        <p>{{'Oops, this might not be what you were looking for'|trans}}</p>
+    </div>
+</div>
+{% endif %}

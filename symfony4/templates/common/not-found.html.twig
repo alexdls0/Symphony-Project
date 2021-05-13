@@ -1,0 +1,16 @@
+<div class="not-found">
+    <div class="bg-fade">
+        {% if message is defined %}
+            <p>
+                {{ message }}<br>
+                <a href="{{path('capsule_dashboard')}}" class="mail-direction">{{'Go to Dashboard'|trans}}</a>
+            </p>
+        {% else %}
+            <p>
+                {{'Oops, we have not found any results... '|trans}}
+                <a href="{{path('capsule_dashboard')}}" class="mail-direction">{{'Go to Dashboard'|trans}}</a>
+            </p>
+        {% endif %}
+        <p></p>
+    </div>
+</div>

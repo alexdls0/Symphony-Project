@@ -1,0 +1,4 @@
+[04-Feb-2019 00:08:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheet_uri() in /home/ubuntu/workspace/wp-content/themes/zapateria/plantillaDash/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/wp-content/themes/zapateria/plantillaDash/index.php on line 16

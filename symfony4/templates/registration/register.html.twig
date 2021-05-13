@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Register'|trans}} | Capsule{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+{% endblock %}
+
+
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="firstScreen accountPage" id="firstScreen">
+            {% include 'common/nav-notlogged.html.twig' with {'min' : true} %}
+            <div class="account-tab-header">
+                <div><h1 class="tab-header active" data-tab="tab-1">{{'REGISTER'|trans}}</h1></div>
+            </div>
+            <div class="tab-content active" id="tab-1">
+                <div class="xs-padding-left b-left">
+                    <h2 class="nickname">{{'Hi, @future new user!'|trans}}</h2>
+                    <p class="advice">
+                        {{'please, fill the form down below.'|trans}}
+                    </p>
+                </div>
+                <div class="tab-wrapper">
+                    <div class="col-account col-account-2">
+                        <div class="title"><h1>{{'Register form'|trans}}</h1></div>
+                        <div class="account-form payment-form">
+                            {% if dberror %}<h5>{{dberror}}</h5>{%endif%}
+                            <form id="js-validateForm" action="{{ path('capsule_register', {'promo': promo}) }}" method="post">
+                            {{ form_start(registrationForm) }}
+                                {{ form_row(registrationForm.apodo) }}
+                                {{ form_row(registrationForm.plainPassword.first) }}
+                                {{ form_row(registrationForm.plainPassword.second) }}
+                                {{ form_row(registrationForm.correo) }}
+                                {{ form_row(registrationForm.nombre) }}
+                                {{ form_row(registrationForm.apellidos) }}
+                                {{ form_row(registrationForm.locale) }}
+                                {{ form_row(registrationForm.videolang) }}
+                                {{ form_row(registrationForm.fechanac) }}
+                                <div class="g-recaptcha" data-sitekey="6LdhCaAUAAAAAI1FEb2qWYI8zU1ZCwfuA2v-0gpG" data-theme="dark"></div> 
+                                {{ form_row(registrationForm.termsAccepted) }}
+                            {{ form_end(registrationForm) }}
+                        </form>
+                        </div>
+                    </div>
+                    <div class="col-account">
+                        <p><small>{{'You will recieve an e-mail when your account is created.'|trans}}</small></p>
+                        <div class="two-col-wrapper xs-mt">
+                            <a href="{{ path('capsule_log') }}" class="btn submit-register">{{'Login'|trans}}</a>  
+                            <button class="btn submit-register no-margin" type="submit" form="js-validateForm">{{'Register'|trans}}</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'common/footer.html.twig' %}
+    </div>
+    
+{% endblock %}
+
+
+{% block javascripts %}
+    
+    <script src="{{asset('/assets/js/jquery-val/jquery.validate.min.js')}}"></script>
+    <script>
+        $("#js-validateForm").validate();
+    </script>
+    
+    <!-- Recaptcha v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        $(window).on('load', function() {
+            $('.loader').fadeOut();
+        });
+    </script>
+{% endblock %}

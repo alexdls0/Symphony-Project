@@ -1,0 +1,86 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    #locale: 'es'
+    locale: 'en'
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/*'
+        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments']
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+
+
+##ADMIN PANEL SERVICES
+    admin.usuario:
+            class: App\Admin\UsuarioAdmin
+            arguments: [~, App\Entity\Usuario, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Users, group: Personal }
+    
+    admin.videodata:
+            class: App\Admin\VideoAdmin
+            arguments: [~, App\Entity\Video, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Videos', group: Content }
+    
+    admin.estadovideoadmin:
+            class: App\Admin\EstadoVideoAdmin
+            arguments: [~, App\Entity\EstadoVideo, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Video Status Metadata', group: Personal }
+                
+    admin.temporada:
+            class: App\Admin\TemporadaAdmin
+            arguments: [~, App\Entity\Temporada, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Show Seasons', group: Content }
+                
+    admin.serie:
+            class: App\Admin\GrupoAdmin
+            arguments: [~, App\Entity\Grupo, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Video Groups', group: Content }
+                
+    admin.productor:
+            class: App\Admin\ProductorAdmin
+            arguments: [~, App\Entity\Productor, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Producers', group: Content }
+                
+    admin.pago:
+            class: App\Admin\PagoAdmin
+            arguments: [~, App\Entity\Pago, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Payments, group: Personal }
+                
+    admin.director:
+            class: App\Admin\DirectorAdmin
+            arguments: [~, App\Entity\Director, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Directors', group: Content }
+    
+    admin.categoria:
+            class: App\Admin\CategoriaAdmin
+            arguments: [~, App\Entity\Categoria, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: 'Categories', group: Content }
+                

@@ -1,0 +1,42 @@
+<a href="{{path('capsule_dashboard')}}">
+    <img src="{{asset('assets/img/logo-bg.png')}}" class="logo-page">
+</a>
+<div class="nav">
+    <ul>
+        <li>
+            <form class="form-input-search" action="{{path('capsule_browse')}}" id="browse" method="post">
+                <input type="text" placeholder="{{'Search...'|trans}}" name="s" >
+                <button type="submit" form="browse">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </li>
+        <li>
+            <a class="user-icon" href="{{ path( 'capsule_account_favs' ) }}">
+                <img src="{{ asset( 'assets/img/heart.png' ) }}">
+            </a>
+        </li>
+        <li>
+            <a class="user-icon" href="{{path('capsule_account')}}">
+                {% if notifypremium(app.user.fechapremium) %}
+                    <div class="premium-indicator" data-route="{{ path('capsule_pay') }}"></div>
+                {% else %}
+                    <div class="premium-indicator not-premium" data-route="{{ path('capsule_pay') }}"></div>
+                {% endif %}
+                <img src="{{asset('assets/img/user-account.png')}}">
+            </a>
+        </li>
+        {% if app.user.type %}
+            <li>
+                <a class="user-icon" href="/admin">
+                    <img src="{{ asset( 'assets/img/key.png' ) }}">
+                </a>
+            </li>
+        {% endif %}
+        <li>
+            <a class="user-icon" href="/logout">
+                <img src="{{asset('assets/img/logout.png')}}">
+            </a>
+        </li>
+    </ul>
+</div>

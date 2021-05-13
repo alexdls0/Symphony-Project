@@ -1,0 +1,275 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Capsule | {{'Connect with yourself'| trans}}{% endblock %}
+
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="firstScreen" id="firstScreen">
+            {% include 'common/nav-logged.html.twig' %}
+            <div class="slide-container">
+                {% if latest|length %}
+                    {% for item in latest %}
+                    <div class="slide" style="background-image: url({{item.thumbsrc}});">
+                            <div class="bg-fade">
+                                <div class="item-info">
+                                    <div class="title-div">
+                                        <h1 class="title">
+                                            {{ videotitle(item) }}
+                                        </h1>
+                                        <a href="{{ (item.grupo) ? path(item.grupo.getRoute(), {'id' : item.grupo.id }) : path('capsule_vid', {'vid' : item.id }) }}">
+                                            <img class="play-button" src="{{asset('assets/img/playbutton.png')}}">
+                                        </a>
+                                    </div>
+                                    <p>
+                                        {{ item.descripcion }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    {% endfor %}
+            {% endif %}
+        </div>
+        <div class="afterFirstScreen" id="afterFirstScreen">
+            
+            {% if watching|length %}
+            <!--Keep Watching-->
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row keep-watching">
+                    <div class="section-title">
+                        <h1>{{'Keep watching'| trans}}</h1>
+                    </div>
+                    <div class="row-slider">
+                        {% for saved in watching %}
+                        <div class="thumb-slide content-item" style="background-image: url({{saved.video.thumbsrc}});">
+                            <a href="{{  path('capsule_vid', {'vid' : saved.video.id }) }}">
+                                <p>{{videotitle(saved.video)}}</p>
+                            </a>
+                            <div class="progressbar">
+                                <div class="back"></div>
+                                <div class="front" style="width: {{saved.porcentaje}}%;"></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            
+            {% if singlerecommend|length and singlerecommend.vid|length%}
+            <!-- Single recommend -->
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row row-normal">
+                    <div class="section-title">
+                        <h1>{{'Since you watched'|trans}} {{videotitle(singlerecommend.title)}}</h1>
+                    </div>
+                    <div class="row-normal-slider" data-count="{{singlerecommend|length}}">
+                        {% for r in singlerecommend.vid %}
+                        <div class="thumb-slide content-item" style="background-image: url({{r.thumbsrc}});">
+                            <a href="{{ (r.grupo) ? path( r.grupo.getRoute(), {'id' : r.grupo.id }) : path('capsule_vid', {'vid' : r.id }) }}">
+                                <p>{{videotitle(r)}}</p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            
+            {% if premvids|length %}
+            <!-- Premium content -->
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row row-normal">
+                    <div class="section-title">
+                        <h1>{{'Premium content'| trans}}</h1>
+                    </div>
+                    <div class="row-normal-slider" data-count="{{premvids|length}}">
+                        {% for r in premvids %}
+                        <div class="thumb-slide content-item" style="background-image: url({{r.thumbsrc}});">
+                            <a href="{{ (r.grupo) ? path( r.grupo.getRoute(), {'id' : r.grupo.id }) : path('capsule_vid', {'vid' : r.id }) }}">
+                                <p>{{videotitle(r)}}</p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            
+            {% if recommend|length %}
+            <!-- Recommended by category -->
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row row-normal">
+                    <div class="section-title">
+                        <h1>{{'Recommended for you'| trans}}</h1>
+                    </div>
+                    <div class="row-normal-slider" data-count="{{recommend|length}}">
+                        {% for r in recommend %}
+                        <div class="thumb-slide content-item" style="background-image: url({{r.thumbsrc}});">
+                            <a href="{{ (r.grupo) ? path( r.grupo.getRoute(), {'id' : r.grupo.id }) : path('capsule_vid', {'vid' : r.id }) }}">
+                                <p>{{videotitle(r)}}</p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            
+            {% if upcoming|length %}
+            <!-- Upcoming -->
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row row-normal">
+                    <div class="section-title">
+                        <h1>{{'Coming soon'| trans}}</h1>
+                    </div>
+                    <div class="row-normal-slider" data-count="{{upcoming|length}}">
+                        {% for video in upcoming %}
+                        <div class="thumb-slide content-item" style="background-image: url({{video.thumbsrc}});">
+                            <a href="{{ path('capsule_vid', {'vid' : video.id }) }}">
+                                <p>{{videotitle(video)}}</p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            
+            {% if latest %}
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row row-normal">
+                    <div class="section-title">
+                        <h1>{{'Latest arrivals'| trans}}</h1>
+                    </div>
+                    <div class="row-normal-slider" data-count="{{latest|length}}">
+                        {% for item in latest %}
+                        <div class="thumb-slide content-item" style="background-image: url({{item.thumbsrc}});">
+                            <a href="{{ (item.grupo) ? path( item.grupo.getRoute() , {'id' : item.grupo.id }) : path('capsule_vid', {'vid' : item.id }) }}">
+                                <p>{{videotitle(item)}}</p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            
+            <!-- Most loved -->
+            {% if loved|length %}
+            <div class="row-wrapper">
+                <div class="row">
+                    <div class="section-title">
+                        <h1>{{'Top'|trans}} {{loved|length}} {{'Most Loved'|trans}} &#10084; </h1>
+                    </div>
+                    <div class="most-loved">
+                        {% for num,item in loved %}
+                            {% if num == 0 %}
+                                <div class="left content-item" style="background-image: url({{item.0.thumbsrc}});">
+                                    <a href="{{ path('capsule_vid', {'vid' : item.0.id }) }}">
+                                        <p>{{item.nFans}}&#10084; {{videotitle(item.0)}}</p>
+                                    </a>
+                                </div>
+                            {% else %}
+                                {% if num == 1 %}
+                                    <div class="right">
+                                        <div class="content-item" style="background-image: url({{item.0.thumbsrc}});">
+                                            <a href="{{ path('capsule_vid', {'vid' : item.0.id }) }}">
+                                                <p>{{item.nFans}}&#10084; {{videotitle(item.0)}}</p>
+                                            </a>
+                                        </div>
+                                {% else %}
+                                        <div class="content-item" style="background-image: url({{item.0.thumbsrc}});">
+                                            <a href="{{ path('capsule_vid', {'vid' : item.0.id }) }}">
+                                                <p>{{item.nFans}}&#10084; {{videotitle(item.0)}}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+            <!-- All categories -->
+            {% if allcats %}
+            {% for cat in allcats %}
+            {% if cat.videos|length > 0 %}
+            <div class="row-wrapper">
+                <a class="prev">
+                    &#10092;
+                </a>
+                <div class="row row-normal">
+                    <div class="section-title">
+                        <h1><a href="{{path('capsule_browse_category', {'id' : cat.id})}}">{{cat.titulo}} </a></h1>
+                    </div>
+                    <div class="row-normal-slider" data-count="{{cat|length}}">
+                        {% for video in cat.videos %}
+                        <div class="thumb-slide content-item" style="background-image: url({{video.thumbsrc}});">
+                            <a href="{{ (video.grupo) ? path( video.grupo.getRoute() , {'id' : video.grupo.id }) : path('capsule_vid', {'vid' : video.id }) }}">
+                                <p>{{videotitle(video)}}</p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <a class="next">
+                    &#10093;
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </div>
+        {% include 'common/footer.html.twig' %}
+    </div>
+{% endblock %}

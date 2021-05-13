@@ -1,0 +1,9 @@
+<div class="item-row {% if item.id is same as (videodata.id) %}actual-item{% endif%}" data-eid="{{item.id}}">
+    <div class="thumb-slide content-item" style="background-image: url({{ item.thumbsrc }});">
+        <a href="{{ path('capsule_vid', {'vid' : item.id }) }}"></a>
+    </div>
+    <div class="info-item">
+        <p class="item-title">{{ videotitle( item ) }}</p>
+        <p class="item-summary">{{ item.descripcion }}</p>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'History'|trans}} | Capsule{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        {% include 'common/nav-logged.html.twig' %}
+        <div class="left-5">
+            <div class="account-tab-header">
+                <div><h1 class="tab-header"><a href="{{ path( 'capsule_account' )}}#">{{'ACCOUNT'|trans}}/</a></h1></div>
+                <div><h1 class="tab-header active" data-tab="tab-4">{{'HISTORY'|trans}}</h1></div>
+            </div>
+            <div class="tab-content active" id="tab-4">
+                <div class="xs-padding-left b-left s-mb">
+                    {% if dbstatus is defined %}
+                        <p class="advice">
+                            &check;{{'Changes saved.' |trans}}
+                        </p>
+                    {% endif %}
+                    <h2 class="nickname">@{{app.user.apodo}}</h2>
+                    <p class="advice">
+                        {{'You can view your video history and edit it' |trans}}
+                    </p>
+                    {% if videostats|length < 1 %}
+                        <p>Your history is clean</p>
+                    {% else %}
+                        <button id="js-removeAllHistory" class="btn-capsule btn-small" type="button">{{'Clear all' |trans}}</button>
+                    {% endif %}
+                </div>
+                {% if videostats|length > 0 %}  
+                    <div class="history-wrapper">
+                        {% for evid in videostats %}
+                            {% include 'common/item-row.html.twig' %}
+                        {% endfor %}
+                    </div>
+                    {% include 'common/pagination.html.twig' %}
+                {% endif %}
+            </div>
+        </div>
+        {% if videostats|length < 1 %}
+            {% include 'common/not-found.html.twig' %}   
+        {% endif %}
+
+        {% include 'common/footer.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src='{{asset('/assets/js/account/history.js')}}' defer></script>
+{% endblock %}

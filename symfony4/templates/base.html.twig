@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>{% block title %}{{'Welcome!'|trans}}{% endblock %}</title>
+        <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset('assets/slick/slick.css')}}" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous">
+        <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" />
+        <link href="{{asset('assets/css/pretty-checkbox.css')}}" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+        <link href="{{asset('assets/css/loading-bar.css')}}" rel="stylesheet" />
+        
+        <script src="{{asset('assets/js/functions.js')}}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{{ asset('assets/js/sidemenubar.js')}}"></script>
+        <script src="{{asset('assets/slick/slick.min.js')}}"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous">
+        </script>
+        <script src="{{asset('assets/js/loading-bar.js')}}" defer/></script>
+        <script>
+            jQuery(document).ready(function() {
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1500, function() {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script><!-- smooth scroll -->
+        
+        {% block stylesheets %}{% endblock %}
+        {% block javascriptsHeader %}{% endblock %}
+        
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        <script src="{{asset('assets/js/custom-js.js')}}" defer></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

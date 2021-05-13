@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Password Recovery'|trans}} | Capsule{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+{% endblock %}
+
+
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="firstScreen accountPage" id="firstScreen">
+            {% include 'common/nav-notlogged.html.twig' with {'min' : true} %}
+            <div class="account-tab-header">
+                <div><h1 class="tab-header active" data-tab="tab-1">{{'NEW PASS'|trans}}</h1></div>
+            </div>
+            <div class="tab-content active" id="tab-1">
+                <div class="xs-padding-left b-left">
+                        <h2 class="nickname">{{'Hi, @user'|trans}}</h2>
+                        <p class="advice">
+                            {{'Here you can define your new password.'|trans}}
+                        </p>
+                    </div>
+                <div class="tab-wrapper">
+                    <div class="col-account col-account-2">
+                        <div class="title"><h1>{{'New password form'|trans}}</h1></div>
+                        <div class="account-form pw-recovery">
+                            <form id="loginform" method="post" action="{{ path('forgottenpassword') }}?urlname={{ urlname }}&email={{ email }}&token={{ token }}">
+                                <h3>{{'Password recovery'|trans}}</h3>
+                                {{ form_start(recoveryForm) }}
+                                {{ form_row(recoveryForm.plainPassword.first) }}
+                                {{ form_row(recoveryForm.plainPassword.second) }}
+                                {{ form_end(recoveryForm) }}
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-account">
+                        <p>{{"Not you? Didn't request a change?"|trans}}<small>{{' You can just ignore this.'|trans}}</small></p>
+                        <div class="two-col-wrapper xs-mt">
+                            <a href="{{ path('capsule_log') }}" class="btn submit-register" style="color: white">{{"Back Home"|trans}}</a>  
+                            <button class="btn submit-register no-margin" form="loginform">{{"Update"|trans}}</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'common/footer.html.twig' %}
+    </div>
+    
+{% endblock %}
+
+
+{% block javascripts %}
+    <script src="{{asset('/assets/js/jquery-val/jquery.validate.min.js')}}"></script>
+    <script>
+        $("#loginform").validate();
+    </script>
+{% endblock %}
+
+                    
+
+                    

@@ -1,0 +1,99 @@
+<?php
+   get_header();
+   the_post();
+?>
+   <body>
+         <?php get_template_part('templates/nav'); ?>
+         <div class="page-wraper">
+            <section class="breadcrumb">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <ul class="breadcrumb-link">
+                           <?php custom_breadcrumbs(); ?>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="content-page-wrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="post-single mb-30 mb-5">
+                           <div>
+                              <h2 class="mb-3"><a href="<?php the_permalink(); ?>">
+                              	<?php 
+                           			if(get_post_meta($post->ID, 'fecha', true) >= date('Y-m-d')){
+                           				echo '<img src="'. get_template_directory_uri().'/images/logo-bg.png" class="fa-rotate-45" style="height:40px;width:60px; margin-bottom:10px; margin-right:10px;"/>';
+                           			}
+                              	
+                              	?>    
+                              	<?php the_title();?></a>
+                              </h2>
+                           </div>
+                           <div class="mb-3">
+                              <?php
+                                 if(has_post_thumbnail()){
+                                    echo '<img src="';
+                                    echo get_the_post_thumbnail_url();
+                                    echo '" class="img-fluid mb-3" alt="Source not found">';	
+                                 }
+                              ?>
+                              <p class="postmeta mb-5">
+                                 <span class="post-author">
+                                 <i class="fa fa-calendar-o"></i>
+                                 <a href="#"><?php the_time('j, M Y');?></a>
+                                 </span>
+                                 <span class="post-comment">
+                                 <i class="fa fa-users"></i>
+                                 <?php echo get_num_visits($post->ID); ?>
+                                 </span>
+                              </p>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-12 mb-10">
+                                 <h6 class="linea-inferior mb-1">Release date:</h6>
+                                 <p><?php echo get_post_meta($post->ID, 'fecha', true); ?></p>
+                              </div>
+                              <div class="col-md-12 mb-10">
+                                 <h6 class="linea-inferior mb-1">Director:</h6>
+                                 <p><?php echo get_post_meta($post->ID, 'director', true); ?></p>
+                              </div>
+                              <div class="col-md-12 mb-10">
+                                 <h6 class="linea-inferior mb-1">Producer:</h6>
+                                 <p><?php echo get_post_meta($post->ID, 'productor', true); ?></p>
+                              </div>
+                              <?php 
+                                 if(strlen(get_post_meta($post->ID, 'sinopsis')[0])>0){
+                              ?>
+                              <div class="col-md-12 mb-30">
+                                 <h6 class="linea-inferior mb-1">Synopsis:</h6>
+                                 <p><?php echo wpautop(get_post_meta($post->ID, 'sinopsis', true)); ?></p>
+                              </div>
+                              <?php
+                                 }
+                              ?>
+                              <div class="col-md-12 mb-10">
+                                 <h6 class="linea-inferior mb-1">Information:</h6>
+                                 <p><?php echo wpautop(get_post_meta($post->ID, 'infoadicional', true)); ?></p>
+                              </div>
+                              <div class="col-md-12 mb-10">
+                                 <div class="blog-popular-tag mt-5">
+                                    <?php
+                                       if(get_the_tag_list()) {
+                                           echo get_the_tag_list('<ul class="popular-tag-wrapper"><li>','</li><li>','</li></ul>');
+                                       }
+                                    ?>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <?php get_template_part('templates/sidebar'); ?>
+                  </div>
+               </div>
+            </section>
+         </div>
+<?php get_footer(); ?>
+

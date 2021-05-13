@@ -1,0 +1,41 @@
+Searching for limitPerPage in/symfony4/src/Controller (Found 31 matches in 3 files)
+
+/symfony4/src/Controller/AccountController.php:
+	106:         $limitPerPage = 6;
+	108:         $favs = $this->vRepo->findAllByUserFanPaged($this->getUser()->getId(),$page,$limitPerPage);
+	112:                 'maxPages' => ceil($favs->count() / $limitPerPage),
+	124:         $limitPerPage = 6;
+	126:         $vs = $this->evRepo->findAllByUserPage($this->getUser()->getId(),$page,$limitPerPage);
+	131:                 'maxPages' => ceil($vs->count() / $limitPerPage),
+	144:         $limitPerPage = 6;
+	146:         $ps = $this->pagoRepo->findAllByUserDatePaged($this->getUser()->getId(),$page,$limitPerPage);
+	150:                 'maxPages' => ceil($ps->count() / $limitPerPage),
+
+/symfony4/src/Controller/BrowseController.php:
+	114:         $limitPerPage = 1;
+	118:             $thisvideos = $this->vidRepo->findAllMoviesOfTypePaged($id,$currentPage,$limitPerPage,0);
+	133:                     'maxPages' => ceil($thisvideos->count() / $limitPerPage),
+	152:         $limitPerPage = 6;
+	156:             $thisvideos = $this->vidRepo->findAllVideosOfDirectorPaged($id,$currentPage,$limitPerPage);
+	171:                     'maxPages' => ceil($thisvideos->count() / $limitPerPage),
+	189:         $limitPerPage = 6;
+	193:             $thisvideos = $this->vidRepo->findAllVideosOfProducerPaged($id,$currentPage,$limitPerPage);
+	208:                 'maxPages' => ceil($thisvideos->count() / $limitPerPage),
+	227:         $limitPerPage = 6;
+	231:             $thisvideos = $this->vidRepo->findAllVideosOfCategoryPaged($id,$currentPage,$limitPerPage);
+	245:                     'maxPages' => ceil($thisvideos->count() / $limitPerPage),
+
+/symfony4/src/Controller/BrowsePageAjaxController.php:
+	50:         $limitPerPage = 4;
+	68:                                                         1, $currentPage, $limitPerPage);
+	72:             $result = $this->gRepo->findBySearchMasterQueryGroup($inputOrder,$inputSearch,1,$currentPage, $limitPerPage);
+	76:             $result = $this->gRepo->findBySearchMasterQueryGroup($inputOrder,$inputSearch,0,$currentPage, $limitPerPage);
+	88:                                                         0, $currentPage, $limitPerPage);
+	100:                                                         null, $currentPage, $limitPerPage);
+	108:             $pdata['maxPages'] = ceil($result->count() / $limitPerPage);
+	134:         $limitPerPage = 1;
+	145:                                                             $limitPerPage);
+	153:             $pdata['maxPages'] = ceil($result['videos']->count() / $limitPerPage);
+
+Found 31 matches in 3 files 
+

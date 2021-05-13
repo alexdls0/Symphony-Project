@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}404 | Capsule{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        
+        {% include 'common/nav-logged.html.twig' %}
+        <div class="account-tab-header">
+            <div><h1 class="tab-header active" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+            <div><h1 class="tab-header" data-tab="tab-1">404</h1></div>
+        </div>
+        <div class="tab-content active " id="tab-1">
+            <div class="tab-wrapper">
+            </div>
+            {% include 'common/not-found.html.twig' with {'message': (message) ? message : "Oops, we couldn't find what you were looking for"} %}
+        </div>
+        {% include 'common/footer.html.twig' %}
+    </div>
+    
+{% endblock %}
+
+

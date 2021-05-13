@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'History'|trans}} | Capsule{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        {% include 'common/nav-logged.html.twig' %}
+        <div class="left-5">
+            <div class="account-tab-header">
+                <div><h1 class="tab-header"><a href="{{ path( 'capsule_account' )}}#">{{'ACCOUNT'|trans}}/</a></h1></div>
+                <div><h1 class="tab-header active" data-tab="tab-4">{{'BILLING'|trans}}</h1></div>
+            </div>
+            <div class="tab-content active" id="tab-4">
+                <div class="xs-padding-left b-left s-mb">
+                    {% if dbstatus is defined %}
+                        <p class="advice">
+                            &check;{{' Changes saved.' |trans}}
+                        </p>
+                    {% endif %}
+                    <h2 class="nickname">@{{app.user.apodo}}</h2>
+                    <p class="advice">
+                        {{'Your billing register is shown here'|trans}}
+                    </p>
+                    {% if payments|length < 1 %}
+                        <p>{{'Your history is empty'|trans}}</p>
+                    {% endif %}
+                </div>
+                {% if payments|length > 0 %}  
+                    <div class="history-wrapper">
+                        {% if not payments %}
+                            <p class="advice">
+                                {{"You don't have any billing register yet"|trans}}
+                            </p>
+                        {% else %}
+                            {% for payment in payments %}
+                                {% include 'common/item-row-billing.html.twig' %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% include 'common/pagination.html.twig' %}
+                {% endif %}
+            </div>
+        </div>
+        {% if payments|length < 1 %}
+            {% include 'common/not-found.html.twig' %}   
+        {% endif %}
+        {% include 'common/footer.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+<script src='/assets/js/account/fav.js' defer></script>
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{(activeitem.titulo) ? activeitem.titulo : activeitem.titulo}} | Capsule{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper groupPage" id="wrapper">
+        <div class="firstScreen" id="firstScreen">
+            {% include 'common/nav-logged.html.twig' %}
+            <div class="big-container">
+            {% if (type == 'director') or (type == 'producer') %}
+                <div class="slide full-wh people not-clickable">
+                    <div class="blur-bg full-wh" style="background-image: url({{activeitem.thumbsrc}});"></div>
+                    <div class="bg-fade">
+                        <div class="people-img responsive-img content-item not-clickable" style="background-image: url({{activeitem.thumbsrc}}); background-size: contain;"></div>
+                        <div class="item-info">
+                            <div class="title-div">
+                                <h1 class="title">{{ videotitle( activeitem ) }}</h1>
+                            </div>
+                            <p>{{ activeitem.descripcion }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% elseif (type == 'saga') or (type == 'show') %}
+                <div class="slide full-wh" {% if activeitem and activeitem.videos|length %} style="background-image: url({{activeitem.videos[0].thumbsrc}});" {% endif %}>
+                    <div class="bg-fade">
+                        <div class="item-info">
+                            <div class="title-div">
+                                <h1 class="title">
+                                    {{ videotitle( activeitem) }}
+                                </h1>
+                            </div>
+                            {% if lastwatched is defined and lastwatched.video is defined %}
+                                <div class="cont-watching">
+                                    <span>Keep watching</span>
+                                    <a href="{{ path('capsule_vid', { vid: lastwatched.video.id } ) }}">
+                                        <img class="play-button" src="{{asset('assets/img/playbutton.png')}}">
+                                    </a>
+                                    <div class="progressbar">
+                                        <div class="back"></div>
+                                        <div class="front" style="width: {{lastwatched.porcentaje}}%;"></div>
+                                    </div>
+                                </div>
+                            {% elseif activeitem and activeitem.videos|length %}
+                                <a href="{{ path('capsule_vid', { vid: activeitem.videos[0].id } ) }}">
+                                    <img class="play-button" src="{{asset('assets/img/playbutton.png')}}">
+                                </a>
+                            {% endif %}
+                            <p>
+                                {{ activeitem.descripcion }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="slide full-wh not-clickable category-page" {% if activeitem and activeitem.videos|length %} style="background-image: url({{activeitem.videos[0].thumbsrc}});" {% endif %}>
+                    <div class="bg-fade">
+                        <div class="item-info">
+                            <div><h1 class="big-title white">{{ videotitle( activeitem) }}</h1></div>
+                            <p>Searching by category</p>
+                            <p>
+                                {{ activeitem.descripcion }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            </div>
+        <div class="afterFirstScreen" id="afterFirstScreen">
+            <div class="row-wrapper">
+                <div class="row row-normal">
+                    <div class="section-title">
+                        {% if (type == 'director') or (type == 'producer') %}
+                            <h1>By {{ videotitle( activeitem) }} </h1>
+                        {% elseif (type == 'show') %}
+                            <h1>Choose episode </h1>
+                        {% elseif (type == 'saga') %}
+                            <h1>Choose movie </h1>
+                        {% else %}
+                            <h1>{{ videotitle( activeitem) }} content </h1>
+                        {% endif %}
+                    </div>
+                    
+                    {% if type == 'show' %}
+                        <select id="js-seasonSelect" name="seasonselect" aria-invalid="false" class="select-season">
+                            {% for season in activeitem.temporadas %}
+                                <option value="{{season.id}}" data-parent="{{activeitem.id}}">{{season.titulo}}</option>
+                            {% endfor %}
+                        </select>
+                    {% endif %}
+                    <div class="row-normal-slide" id="js-resultsSection">
+                        {% if type == 'show' %}
+                            <div class="loader">
+                                <div class="spinner">
+                                    <div class="double-bounce1"></div>
+                                    <div class="double-bounce2"></div>
+                                </div>
+                            </div>
+                        {% else %}
+                            {% if activeitemvideos|length %}
+                                {% for item in activeitemvideos %}
+                                    <div class="item-row">
+                                        <div class="thumb-slide content-item" style="background-image: url({{item.thumbsrc}});">
+                                            <a href="{{ path('capsule_vid', {'vid' :item.id }) }}"></a>
+                                        </div>
+                                        <div class="info-item">
+                                            <p class="item-title">{{ videotitle( item ) }}</p>
+                                            <p class="item-summary">{{ item.descripcion }}</p>
+                                        </div>
+                                        <div class="time align-right">
+                                            <!--
+                                            <p>0%</p>
+                                            <p>00:00 - 1:30H</p>
+                                            <a href="#" class="js-removeHistory a-capsule">&#10005;</a>
+                                            -->
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <div style="flex: 1 0;" {% if isAjaxPaginator %}id="js-paginatorSection"{% endif %}>
+                        {% if isAjaxPaginator == false %}
+                            {% include 'common/pagination.html.twig' %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'common/footer.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+{% if type == 'show' %}
+    <script src="{{asset('assets/js/groupitem/loadshow.js')}}" defer></script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register | Capsule{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+{% endblock %}
+{% block javascriptsHeader %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper wrapper-register" id="wrapper">
+            <div class="register-page">
+                <div class="register-bg"></div>
+                <div class="form-wrapper">
+                    <div class="title-form">
+                        <h1>REGISTER</h1>
+                        <h1>FORM</h1>
+                    </div>
+                    <div class="form-container">
+                        <form id="js-validateForm" action="{{ path('capsule_register') }}" method="post">
+                        {{ form_start(registrationForm) }}
+                            {{ form_row(registrationForm.apodo) }}
+                            {{ form_row(registrationForm.plainPassword.first) }}
+                            {{ form_row(registrationForm.plainPassword.second) }}
+                            {{ form_row(registrationForm.correo) }}
+                            {{ form_row(registrationForm.nombre) }}
+                            {{ form_row(registrationForm.apellidos) }}
+                            {{ form_row(registrationForm.videolang) }}
+                            {{ form_row(registrationForm.fechanac) }}
+                            <div class="two-col-wrapper">
+                                {{ form_row(registrationForm.termsAccepted) }}
+                                <div class="g-recaptcha" data-sitekey="6LdhCaAUAAAAAI1FEb2qWYI8zU1ZCwfuA2v-0gpG" data-theme="dark"></div>  
+                            </div>
+                            <small>You will recieve an e-mail when your account is created.</small>
+                            <div class="two-col-wrapper">
+                                <a href="{{ path('capsule_log') }}" class="btn submit-register">Login</a>  
+                                <button class="btn submit-register">Register</button>  
+                            </div>
+                        {{ form_end(registrationForm) }}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        {% include 'common/footer.html.twig' %}
+        
+    </div>
+    </div>
+
+    
+{% endblock %}
+
+
+{% block javascripts %}
+    
+    <script src="{{asset('/assets/js/jquery-val/jquery.validate.min.js')}}"></script>
+    <script>
+        $("#js-validateForm").validate();
+    </script>
+    
+    <!-- Recaptcha v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        $(window).on('load', function() {
+            $('.loader').fadeOut();
+        });
+    </script>
+{% endblock %}

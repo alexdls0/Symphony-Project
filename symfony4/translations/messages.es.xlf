@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="es" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="ErPxo_k" resname="Changes saved.">
+        <source>Changes saved.</source>
+        <target>Cambios guardados.</target>
+      </trans-unit>
+      <trans-unit id="ScJmuqq" resname="Search">
+        <source>Search</source>
+        <target>Búsqueda</target>
+      </trans-unit>
+      <trans-unit id="uq3fcPt" resname="Type">
+        <source>Type</source>
+        <target>Tipo</target>
+      </trans-unit>
+      <trans-unit id="zViNVdZ" resname="All content">
+        <source>All content</source>
+        <target>Todo el contenido</target>
+      </trans-unit>
+      <trans-unit id="g.lyLZu" resname="Episodes">
+        <source>Episodes</source>
+        <target>Episodios</target>
+      </trans-unit>
+      <trans-unit id="5xSuIdO" resname="Shows">
+        <source>Shows</source>
+        <target>Series</target>
+      </trans-unit>
+      <trans-unit id="sJj8HvR" resname="Sagas">
+        <source>Sagas</source>
+        <target>Sagas</target>
+      </trans-unit>
+      <trans-unit id="3.kktp_" resname="Movies">
+        <source>Movies</source>
+        <target>Películas</target>
+      </trans-unit>
+      <trans-unit id="is41rEk" resname="Order Results">
+        <source>Order Results</source>
+        <target>Ordenar Resultados</target>
+      </trans-unit>
+      <trans-unit id="MyG59uZ" resname="Date added">
+        <source>Date added</source>
+        <target>Fecha añadida</target>
+      </trans-unit>
+      <trans-unit id="Hin8oO3" resname="Alphabetical A-Z">
+        <source>Alphabetical A-Z</source>
+        <target>Alfabético A-Z</target>
+      </trans-unit>
+      <trans-unit id="kGs3OBc" resname="Alphabetical Z-A">
+        <source>Alphabetical Z-A</source>
+        <target>Alfabético Z-A</target>
+      </trans-unit>
+      <trans-unit id="WwQid6I" resname="Recording date">
+        <source>Recording date</source>
+        <target>Fecha rodada</target>
+      </trans-unit>
+      <trans-unit id="vsKr4QK" resname="Age rating">
+        <source>Age rating</source>
+        <target>Edad</target>
+      </trans-unit>
+      <trans-unit id="iDKJM1j" resname="Premium Only">
+        <source>Premium Only</source>
+        <target>Solo Premium</target>
+      </trans-unit>
+      <trans-unit id="VdPfxMb" resname="Complete Only">
+        <source>Complete Only</source>
+        <target>Solo Completados</target>
+      </trans-unit>
+      <trans-unit id="_8WUBU1" resname="Watching">
+        <source>Watching</source>
+        <target>Viendo</target>
+      </trans-unit>
+      <trans-unit id="uLHYlMa" resname="Categories">
+        <source>Categories</source>
+        <target>Categorías</target>
+      </trans-unit>
+      <trans-unit id="VjIRLiQ" resname="Directors">
+        <source>Directors</source>
+        <target>Directores</target>
+      </trans-unit>
+      <trans-unit id="qYDJXAT" resname="Producers">
+        <source>Producers</source>
+        <target>Productores</target>
+      </trans-unit>
+      <trans-unit id="aq2sLyt" resname="Go back">
+        <source>Go back</source>
+        <target>Atrás</target>
+      </trans-unit>
+      <trans-unit id="nWMiwfT" resname="Login">
+        <source>Login</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="n2KfV7f" resname="Credit Card">
+        <source>Credit Card</source>
+        <target>Tarjeta de Crédito</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>Nombre</target>
+      </trans-unit>
+      <trans-unit id="ui3yjsP" resname="Surnames">
+        <source>Surnames</source>
+        <target>Apellidos</target>
+      </trans-unit>
+      <trans-unit id="aDtTH0H" resname="price">
+        <source>price</source>
+        <target>precio</target>
+      </trans-unit>
+      <trans-unit id="N3DcoQG" resname="Oops, we have not found any results...">
+        <source>Oops, we have not found any results...</source>
+        <target>Úps, no encontramos resultados...</target>
+      </trans-unit>
+      <trans-unit id="c678ZdJ" resname="Go to Dashboard">
+        <source>Go to Dashboard</source>
+        <target>Ir al Índice</target>
+      </trans-unit>
+      <trans-unit id="om9S1a3" resname="Connect with yourself">
+        <source>Connect with yourself</source>
+        <target>Conéctate contigo</target>
+      </trans-unit>
+      <trans-unit id=".qhQt2b" resname="Keep watching">
+        <source>Keep watching</source>
+        <target>Seguir viendo</target>
+      </trans-unit>
+      <trans-unit id="ZJgrLsT" resname="Since you watched">
+        <source>Since you watched</source>
+        <target>Puesto que has visto</target>
+      </trans-unit>
+      <trans-unit id="nHJ9dD5" resname="Premium content">
+        <source>Premium content</source>
+        <target>Contenido premium</target>
+      </trans-unit>
+      <trans-unit id="2kOhmlT" resname="Recommended for you">
+        <source>Recommended for you</source>
+        <target>Recomendado para ti</target>
+      </trans-unit>
+      <trans-unit id="T31kAXa" resname="Coming soon">
+        <source>Coming soon</source>
+        <target>Muy pronto</target>
+      </trans-unit>
+      <trans-unit id="zOgSnAH" resname="Latest arrivals">
+        <source>Latest arrivals</source>
+        <target>Últimos lanzamientos</target>
+      </trans-unit>
+      <trans-unit id="1c389.9" resname="Top">
+        <source>Top</source>
+        <target>Los</target>
+      </trans-unit>
+      <trans-unit id="E18gw73" resname="Most Loved">
+        <source>Most Loved</source>
+        <target>más gustados</target>
+      </trans-unit>
+      <trans-unit id="BrJL8YR" resname="User Account">
+        <source>User Account</source>
+        <target>Cuenta</target>
+      </trans-unit>
+      <trans-unit id="LXW3ay3" resname="ACCOUNT">
+        <source>ACCOUNT</source>
+        <target>CUENTA</target>
+      </trans-unit>
+      <trans-unit id="dPLdKaM" resname="BILLING">
+        <source>BILLING</source>
+        <target>COBROS</target>
+      </trans-unit>
+      <trans-unit id="I_BAhN8" resname="HISTORY">
+        <source>HISTORY</source>
+        <target>HISTORIAL</target>
+      </trans-unit>
+      <trans-unit id="F76V4aG" resname="Account details">
+        <source>Account details</source>
+        <target>Detalles de cuenta</target>
+      </trans-unit>
+      <trans-unit id="fzo7FCg" resname="Save settings">
+        <source>Save settings</source>
+        <target>Guardar ajustes</target>
+      </trans-unit>
+      <trans-unit id="chZTpl0" resname="Account stats">
+        <source>Account stats</source>
+        <target>Estadísticas</target>
+      </trans-unit>
+      <trans-unit id="m729Cl3" resname="Premium advantages">
+        <source>Premium advantages</source>
+        <target>Ventajas premium</target>
+      </trans-unit>
+      <trans-unit id="WXzoaGl" resname="Birthdate">
+        <source>Birthdate</source>
+        <target>Fecha de nacimiento</target>
+      </trans-unit>
+      <trans-unit id="Pcqt2dm" resname="Days without subscription">
+        <source>Days without subscription</source>
+        <target>Dias sin subscripción</target>
+      </trans-unit>
+      <trans-unit id="HIBJvRl" resname="Remaining premium days">
+        <source>Remaining premium days</source>
+        <target>Dias premium restantes</target>
+      </trans-unit>
+      <trans-unit id="YwDvgAu" resname="Never">
+        <source>Never</source>
+        <target>Nunca</target>
+      </trans-unit>
+      <trans-unit id="cTF1XnV" resname="Premium subscription">
+        <source>Premium subscription</source>
+        <target>Subscripción premium</target>
+      </trans-unit>
+      <trans-unit id="a3ZKSW2" resname="Registration date">
+        <source>Registration date</source>
+        <target>Fecha de registro</target>
+      </trans-unit>
+      <trans-unit id="0_FXCDn" resname="you can change your account details here. If you have &#10;                                any questions, please contact us at">
+        <source>you can change your account details here. If you have 
+                                any questions, please contact us at</source>
+        <target>aquí puedes cambiar la configuración de tu cuenta. Si tienes
+                                alguna pregunta, por favor, contáctenos en</target>
+      </trans-unit>
+      <trans-unit id="XjG3PT0" resname="Deactivate account">
+        <source>Deactivate account</source>
+        <target>Desactivar cuenta</target>
+      </trans-unit>
+      <trans-unit id="qr6eQiE" resname="Favourite content">
+        <source>Favourite content</source>
+        <target>Contenido favorito</target>
+      </trans-unit>
+      <trans-unit id="qU9kc52" resname="Days of subscription">
+        <source>Days of subscription</source>
+        <target>Días de subscripción</target>
+      </trans-unit>
+      <trans-unit id=".AgNd4S" resname="you can change your account details here. If you have &#10;                                any question, please contact us at">
+        <source>you can change your account details here. If you have 
+                                any question, please contact us at</source>
+        <target>aquí puedes cambiar la configuración de tu cuenta. Si tienes
+                                alguna pregunta, por favor, contáctenos en</target>
+      </trans-unit>
+      <trans-unit id="lLU1IDs" resname="Your billing register is shown here">
+        <source>Your billing register is shown here</source>
+        <target>Aquí se muestra tu registro de cobros</target>
+      </trans-unit>
+      <trans-unit id="ncAn2_W" resname="See the full billing register">
+        <source>See the full billing register</source>
+        <target>Ver el registro completo</target>
+      </trans-unit>
+      <trans-unit id="P.9N4_D" resname="You are a premium user.">
+        <source>You are a premium user.</source>
+        <target>Eres usuario premium.</target>
+      </trans-unit>
+      <trans-unit id="tUGeMd." resname="Buy premium">
+        <source>Buy premium</source>
+        <target>Comprar premium</target>
+      </trans-unit>
+      <trans-unit id="KR1DJ3r" resname="You don't have any billing register yet">
+        <source>You don't have any billing register yet</source>
+        <target>Aún no ha realizado ningún pago</target>
+      </trans-unit>
+      <trans-unit id="h.OGVPx" resname="You can go over your video history and edit it">
+        <source>You can go over your video history and edit it</source>
+        <target>Puede ver y editar su historial</target>
+      </trans-unit>
+      <trans-unit id=".dlp9fh" resname="See the full history">
+        <source>See the full history</source>
+        <target>Ver el historial completo</target>
+      </trans-unit>
+      <trans-unit id="0wkQSoO" resname="You have not watched anything yet,">
+        <source>You have not watched anything yet,</source>
+        <target>Aún no has visto ningún video,</target>
+      </trans-unit>
+      <trans-unit id="cpXQ8Nw" resname="what are you waiting for?">
+        <source>what are you waiting for?</source>
+        <target>¿A qué esperas?</target>
+      </trans-unit>
+      <trans-unit id="DnaWAJM" resname="History">
+        <source>History</source>
+        <target>Historial</target>
+      </trans-unit>
+      <trans-unit id="7p76cE9" resname="You can view your video history and edit it">
+        <source>You can view your video history and edit it</source>
+        <target>Puede ver su historial y editarlo</target>
+      </trans-unit>
+      <trans-unit id="KaOQ_SN" resname="Clear all">
+        <source>Clear all</source>
+        <target>Borrar todo</target>
+      </trans-unit>
+      <trans-unit id="Ae1KM.B" resname="Your history is empty">
+        <source>Your history is empty</source>
+        <target>Tu historial está vacío</target>
+      </trans-unit>
+      <trans-unit id="2X1R03C" resname="Favourites">
+        <source>Favourites</source>
+        <target>Favoritos</target>
+      </trans-unit>
+      <trans-unit id="elcWsP4" resname="FAVOURITES">
+        <source>FAVOURITES</source>
+        <target>FAVORITOS</target>
+      </trans-unit>
+      <trans-unit id="w6sdrOn" resname="here you have the videos you have saved in your list.">
+        <source>here you have the videos you have saved in your list.</source>
+        <target>aqui tienes tus videos favoritos.</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Registro</target>
+      </trans-unit>
+      <trans-unit id="afrJqTF" resname="REGISTER">
+        <source>REGISTER</source>
+        <target>REGISTRO</target>
+      </trans-unit>
+      <trans-unit id="mBWVUBN" resname="Hi, @future new user!">
+        <source>Hi, @future new user!</source>
+        <target>¡Hola, futuro @usuario!</target>
+      </trans-unit>
+      <trans-unit id="n.70K9J" resname="please, fill the form down below.">
+        <source>please, fill the form down below.</source>
+        <target>por favor, rellena el siguiente formulario.</target>
+      </trans-unit>
+      <trans-unit id="Vp5Cy7Q" resname="Register form">
+        <source>Register form</source>
+        <target>Formulario de registro</target>
+      </trans-unit>
+      <trans-unit id="JZb_r0S" resname="You will recieve an e-mail when your account is created.">
+        <source>You will recieve an e-mail when your account is created.</source>
+        <target>Recibirás un correo cuando se cree tu cuenta.</target>
+      </trans-unit>
+      <trans-unit id="jgLD6sB" resname="Capsule Player">
+        <source>Capsule Player</source>
+        <target>Reproductor Capsule</target>
+      </trans-unit>
+      <trans-unit id="h1pBqQu" resname="Coming soon:">
+        <source>Coming soon:</source>
+        <target>Muy pronto:</target>
+      </trans-unit>
+      <trans-unit id="S.kAekP" resname="We are sorry, this content requires minimum age">
+        <source>We are sorry, this content requires minimum age</source>
+        <target>Lo sentimos, este contenido requiere la edad mínima</target>
+      </trans-unit>
+      <trans-unit id="23hoxrx" resname="and other amazing adventages are reserved to premium users">
+        <source>and other amazing adventages are reserved to premium users</source>
+        <target>y muchas otras ventajas se reservan a los usuarios premium</target>
+      </trans-unit>
+      <trans-unit id="LGRH2hY" resname="Pay with Capsule Pay">
+        <source>Pay with Capsule Pay</source>
+        <target>Paga con Capsule Pay</target>
+      </trans-unit>
+      <trans-unit id="7.I6EIv" resname="Secure Payment">
+        <source>Secure Payment</source>
+        <target>Pago seguro</target>
+      </trans-unit>
+      <trans-unit id="i3.CKEY" resname="Membership activated">
+        <source>Membership activated</source>
+        <target>Membresía activada</target>
+      </trans-unit>
+      <trans-unit id="s9v7aot" resname="We are sorry, this content requires minimum age +">
+        <source>We are sorry, this content requires minimum age +</source>
+        <target>Lo sentimos, este contenido requiere la edad mínima +</target>
+      </trans-unit>
+      <trans-unit id="K_vcox8" resname="Previous chapter">
+        <source>Previous chapter</source>
+        <target>Capítulo anterior</target>
+      </trans-unit>
+      <trans-unit id="tRSJvej" resname="Date:">
+        <source>Date:</source>
+        <target>Fecha:</target>
+      </trans-unit>
+      <trans-unit id="KXGM1NW" resname="Director:">
+        <source>Director:</source>
+        <target>Director:</target>
+      </trans-unit>
+      <trans-unit id="GBLhCzO" resname="Producer:">
+        <source>Producer:</source>
+        <target>Productor:</target>
+      </trans-unit>
+      <trans-unit id="8BWrjR_" resname="Categorias:">
+        <source>Categorias:</source>
+        <target>Categorias:</target>
+      </trans-unit>
+      <trans-unit id="CfYkImZ" resname="More information">
+        <source>More information</source>
+        <target>Mas información</target>
+      </trans-unit>
+      <trans-unit id="Djxf4A9" resname="Writer">
+        <source>Writer</source>
+        <target>Guionista</target>
+      </trans-unit>
+      <trans-unit id="FQBAVXM" resname="Cast">
+        <source>Cast</source>
+        <target>Reparto</target>
+      </trans-unit>
+      <trans-unit id="q56mgq9" resname="Original Language">
+        <source>Original Language</source>
+        <target>Idioma original</target>
+      </trans-unit>
+      <trans-unit id="DG9bI6w" resname="Physical release">
+        <source>Physical release</source>
+        <target>Lanzamiento físico</target>
+      </trans-unit>
+      <trans-unit id="ICCvRiD" resname="Box Office Perfomance">
+        <source>Box Office Perfomance</source>
+        <target>Rendimiento en salas</target>
+      </trans-unit>
+      <trans-unit id="cTi6puo" resname="Official Website">
+        <source>Official Website</source>
+        <target>Web oficial</target>
+      </trans-unit>
+      <trans-unit id="Q0Td55e" resname="Next chapter">
+        <source>Next chapter</source>
+        <target>Siguiente capítulo</target>
+      </trans-unit>
+      <trans-unit id="ooerho1" resname="Payment Failed">
+        <source>Payment Failed</source>
+        <target>Pago fallido</target>
+      </trans-unit>
+      <trans-unit id="ztH29fi" resname="PAYMENT FAILED">
+        <source>PAYMENT FAILED</source>
+        <target>PAGO FALLIDO</target>
+      </trans-unit>
+      <trans-unit id="vEf1i7l" resname="No change has been made to your account.">
+        <source>No change has been made to your account.</source>
+        <target>No hemos realizado cambios sobre tu cuenta.</target>
+      </trans-unit>
+      <trans-unit id="qk5QmmO" resname="It seems like you already have the premium benefits activated.">
+        <source>It seems like you already have the premium benefits activated.</source>
+        <target>Parece que ya dispones de los beneficios premium.</target>
+      </trans-unit>
+      <trans-unit id="ZfUkhqx" resname="Thank you for trusting Capsule.">
+        <source>Thank you for trusting Capsule.</source>
+        <target>Gracias por confiar en Capsule.</target>
+      </trans-unit>
+      <trans-unit id="r9B6M90" resname="Your premium service expires">
+        <source>Your premium service expires</source>
+        <target>Tu servicio premium expira</target>
+      </trans-unit>
+      <trans-unit id="6eYxvZQ" resname="Back to account">
+        <source>Back to account</source>
+        <target>Volver a cuenta</target>
+      </trans-unit>
+      <trans-unit id="cEjzizP" resname="Payment">
+        <source>Payment</source>
+        <target>Pago</target>
+      </trans-unit>
+      <trans-unit id="Ir7m5m6" resname="PAYMENT">
+        <source>PAYMENT</source>
+        <target>PAGO</target>
+      </trans-unit>
+      <trans-unit id="dPzeueR" resname="please, slide to select your plan and fill the form.">
+        <source>please, slide to select your plan and fill the form.</source>
+        <target>por favor, selecciona tu tarifa y rellena los datos.</target>
+      </trans-unit>
+      <trans-unit id="zsOpuJs" resname="Data">
+        <source>Data</source>
+        <target>Datos</target>
+      </trans-unit>
+      <trans-unit id="8BhH38l" resname="Proceed">
+        <source>Proceed</source>
+        <target>Proceder</target>
+      </trans-unit>
+      <trans-unit id="ybPDgkf" resname="Total">
+        <source>Total</source>
+        <target>Total</target>
+      </trans-unit>
+      <trans-unit id="5gBPAn." resname="Payment Accepted">
+        <source>Payment Accepted</source>
+        <target>Pago Aceptado</target>
+      </trans-unit>
+      <trans-unit id="HMeECxS" resname="They payment has been completed.">
+        <source>They payment has been completed.</source>
+        <target>Se ha completado el pago.</target>
+      </trans-unit>
+      <trans-unit id="XxW48Xd" resname="You can see the details in">
+        <source>You can see the details in</source>
+        <target>Puedes ver los detalles en</target>
+      </trans-unit>
+      <trans-unit id=".fPElMg" resname="the billing page">
+        <source>the billing page</source>
+        <target>la página de pagos</target>
+      </trans-unit>
+      <trans-unit id="dsVQX.L" resname="Back to home">
+        <source>Back to home</source>
+        <target>Volver a Inicio</target>
+      </trans-unit>
+      <trans-unit id="zI.Z63_" resname="Welcome!">
+        <source>Welcome!</source>
+        <target>¡Bienvenido!</target>
+      </trans-unit>
+      <trans-unit id="cQUnkqC" resname="Oops, this might not be what you were looking for">
+        <source>Oops, this might not be what you were looking for</source>
+        <target>Úps, a lo mejor esto no es lo que buscas</target>
+      </trans-unit>
+      <trans-unit id="k5gtM8U" resname="Password Recovery">
+        <source>Password Recovery</source>
+        <target>Recuperar contraseña</target>
+      </trans-unit>
+      <trans-unit id="yd.tEUm" resname="NEW PASS">
+        <source>NEW PASS</source>
+        <target>NUEVA CONTRASEÑA</target>
+      </trans-unit>
+      <trans-unit id="8RoC5i8" resname="Hi, @user">
+        <source>Hi, @user</source>
+        <target>Hola, @user</target>
+      </trans-unit>
+      <trans-unit id="9vjrWMv" resname="Here you can define your new password.">
+        <source>Here you can define your new password.</source>
+        <target>Aqui puedes guardar tu nueva contraseña.</target>
+      </trans-unit>
+      <trans-unit id="bDAdf.l" resname="New password form">
+        <source>New password form</source>
+        <target>Formulario de contraseña</target>
+      </trans-unit>
+      <trans-unit id="LVyH4z_" resname="Password recovery">
+        <source>Password recovery</source>
+        <target>Recuperar contraseña</target>
+      </trans-unit>
+      <trans-unit id="ylHuCLP" resname="Not you? Didn't request a change?">
+        <source>Not you? Didn't request a change?</source>
+        <target>¿No eres tú? ¿No pediste el cambio?</target>
+      </trans-unit>
+      <trans-unit id="L6ynHj6" resname="You can just ignore this.">
+        <source>You can just ignore this.</source>
+        <target>Puedes ignorar esta página.</target>
+      </trans-unit>
+      <trans-unit id="zrmtViS" resname="Back Home">
+        <source>Back Home</source>
+        <target>Volver a Inicio</target>
+      </trans-unit>
+      <trans-unit id="wcEAnT8" resname="Update">
+        <source>Update</source>
+        <target>Guardar</target>
+      </trans-unit>
+      <trans-unit id="Ue51env" resname="Capsule">
+        <source>Capsule</source>
+        <target>Capsule</target>
+      </trans-unit>
+      <trans-unit id="QzepZ3C" resname="Password has been changed correctly">
+        <source>Password has been changed correctly</source>
+        <target>La contraseña se ha guardado correctamente</target>
+      </trans-unit>
+      <trans-unit id="xzKpd_p" resname="Your account has been activated">
+        <source>Your account has been activated</source>
+        <target>Tu cuenta ha sido activada</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>Iniciar sesión</target>
+      </trans-unit>
+      <trans-unit id="1yD2HIx" resname="Nickname">
+        <source>Nickname</source>
+        <target>Apodo</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+      <trans-unit id="1QGH3Rc" resname="ENTER">
+        <source>ENTER</source>
+        <target>ENTRAR</target>
+      </trans-unit>
+      <trans-unit id="TAue51F" resname="Recover Password">
+        <source>Recover Password</source>
+        <target>Recuperar contraseña</target>
+      </trans-unit>
+      <trans-unit id="rDFheaL" resname="Enter your Email and the instructions will be sent to you!">
+        <source>Enter your Email and the instructions will be sent to you!</source>
+        <target>Introduce tu correo y te enviaremos las instrucciones</target>
+      </trans-unit>
+      <trans-unit id="9vRoj.I" resname="Send">
+        <source>Send</source>
+        <target>Enviar</target>
+      </trans-unit>
+      <trans-unit id="JGroZ9r" resname="and much more in Capsule">
+        <source>and much more in Capsule</source>
+        <target>y mucho mas en Capsule</target>
+      </trans-unit>
+      <trans-unit id="N7CKA_A" resname="Star Wars">
+        <source>Star Wars</source>
+        <target>Star Wars</target>
+      </trans-unit>
+      <trans-unit id="HzRvG94" resname="Stranger Things">
+        <source>Stranger Things</source>
+        <target>Stranger Things</target>
+      </trans-unit>
+      <trans-unit id="KgeQgZ6" resname="Narcos">
+        <source>Narcos</source>
+        <target>Narcos</target>
+      </trans-unit>
+      <trans-unit id="2radYRC" resname="Peaky Blinders">
+        <source>Peaky Blinders</source>
+        <target>Peaky Blinders</target>
+      </trans-unit>
+      <trans-unit id="tXEU0_h" resname="True Detective">
+        <source>True Detective</source>
+        <target>True Detective</target>
+      </trans-unit>
+      <trans-unit id="n3IufAh" resname="Just try Capsule for 2 months">
+        <source>Just try Capsule for 2 months</source>
+        <target>Prueba capsule 2 meses</target>
+      </trans-unit>
+      <trans-unit id="aCfykk8" resname="no credit card required during the free trial">
+        <source>no credit card required during the free trial</source>
+        <target>no se requiere de pago durante la prueba</target>
+      </trans-unit>
+      <trans-unit id="39nkHvG" resname="Free account">
+        <source>Free account</source>
+        <target>Cuenta gratuita</target>
+      </trans-unit>
+      <trans-unit id="p7iaUBu" resname="Enjoy full seasons of your favourites tv shows.">
+        <source>Enjoy full seasons of your favourites tv shows.</source>
+        <target>Disfruta de temporadas completas de tus series favoritas.</target>
+      </trans-unit>
+      <trans-unit id="TsucUYe" resname="Media in HD resolution">
+        <source>Media in HD resolution</source>
+        <target>Vídeos en calidad HD</target>
+      </trans-unit>
+      <trans-unit id="SlaurEf" resname="Hundreds of movies and series!">
+        <source>Hundreds of movies and series!</source>
+        <target>¡Cientos de películas y series!</target>
+      </trans-unit>
+      <trans-unit id="VvnByp2" resname="Free forever">
+        <source>Free forever</source>
+        <target>Gratis siempre</target>
+      </trans-unit>
+      <trans-unit id="3ojBIag" resname="Premium">
+        <source>Premium</source>
+        <target>Premium</target>
+      </trans-unit>
+      <trans-unit id="XH2DO2M" resname="All the base plan features">
+        <source>All the base plan features</source>
+        <target>Todo el plán básico</target>
+      </trans-unit>
+      <trans-unit id="UCihVXo" resname="Media up to 4k HD resolution">
+        <source>Media up to 4k HD resolution</source>
+        <target>Videos hasta 4k HD</target>
+      </trans-unit>
+      <trans-unit id="98xI9wQ" resname="Switch plans or cancel anytime">
+        <source>Switch plans or cancel anytime</source>
+        <target>Cambia de plan o cancela cuando quieras</target>
+      </trans-unit>
+      <trans-unit id="s53uqhS" resname="+ 2 month free">
+        <source>+ 2 month free</source>
+        <target>+ 2 meses gratis</target>
+      </trans-unit>
+      <trans-unit id="f1U4Ihn" resname="Search...">
+        <source>Search...</source>
+        <target>Buscar...</target>
+      </trans-unit>
+      <trans-unit id="GF_NsyJ" resname="Hello">
+        <source>Hello</source>
+        <target>Hola</target>
+      </trans-unit>
+      <trans-unit id="f06q9Mh" resname="You have extended your Capsule premium subscription">
+        <source>You have extended your Capsule premium subscription</source>
+        <target>Has extendido tu subscripción premium de Capsule</target>
+      </trans-unit>
+      <trans-unit id="9s0WbhN" resname="Checkout time:">
+        <source>Checkout time:</source>
+        <target>Hora de cobro:</target>
+      </trans-unit>
+      <trans-unit id="CxszIUG" resname="Checkout price:">
+        <source>Checkout price:</source>
+        <target>Importe:</target>
+      </trans-unit>
+      <trans-unit id="xi0H7Uo" resname="Holder surname:">
+        <source>Holder surname:</source>
+        <target>Apellidos titular:</target>
+      </trans-unit>
+      <trans-unit id="px6I.pU" resname="Holder name:">
+        <source>Holder name:</source>
+        <target>Nombre titular:</target>
+      </trans-unit>
+      <trans-unit id="DozcV7A" resname="Your Capsule account requires activation">
+        <source>Your Capsule account requires activation</source>
+        <target>Tu cuenta de capsule requiere activación</target>
+      </trans-unit>
+      <trans-unit id="YtygB6C" resname="Click here">
+        <source>Click here</source>
+        <target>Clic aquí</target>
+      </trans-unit>
+      <trans-unit id="JrqUbBV" resname="to activate.">
+        <source>to activate.</source>
+        <target>para activar.</target>
+      </trans-unit>
+      <trans-unit id="0d06Ust" resname="A password change has been requested for your Capsule account">
+        <source>A password change has been requested for your Capsule account</source>
+        <target>Se ha pedido un cambio de contraseña para tu cuenta de Capsule</target>
+      </trans-unit>
+      <trans-unit id="6ex0ota" resname="to register a new one.">
+        <source>to register a new one.</source>
+        <target>para registrar uno nuevo.</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>Correo</target>
+      </trans-unit>
+      <trans-unit id="z6yrMBa" resname="Surame">
+        <source>Surame</source>
+        <target>Apellidos</target>
+      </trans-unit>
+      <trans-unit id="8kiP1O9" resname="Email address">
+        <source>Email address</source>
+        <target>Dirección de correo electrónico</target>
+      </trans-unit>
+      <trans-unit id="gCf0Mqf" resname="Interface language">
+        <source>Interface language</source>
+        <target>Idioma de la interfaz</target>
+      </trans-unit>
+      <trans-unit id="6tfNYYx" resname="Send password change email">
+        <source>Send password change email</source>
+        <target>Enviar correo de cambio de contraseña</target>
+      </trans-unit>
+      <trans-unit id="_o7Qvav" resname="Plan">
+        <source>Plan</source>
+        <target>Tarifa</target>
+      </trans-unit>
+      <trans-unit id="wh.UcrG" resname="Video playback language">
+        <source>Video playback language</source>
+        <target>Idioma de reproducción de vídeo</target>
+      </trans-unit>
+      <trans-unit id="wmy_ZKR" resname="1 Month">
+        <source>1 Month</source>
+        <target>1 Mes</target>
+      </trans-unit>
+      <trans-unit id="EkjHHFx" resname="3 Months">
+        <source>3 Months</source>
+        <target>3 Meses</target>
+      </trans-unit>
+      <trans-unit id="eCgnpot" resname="6 Months">
+        <source>6 Months</source>
+        <target>6 Meses</target>
+      </trans-unit>
+      <trans-unit id="ycto2To" resname="12 Months">
+        <source>12 Months</source>
+        <target>12 Meses</target>
+      </trans-unit>
+      <trans-unit id="2Pczt5T" resname="Expiry (YYYY/MM)">
+        <source>Expiry (YYYY/MM)</source>
+        <target>Expiración (YYYY/MM)</target>
+      </trans-unit>
+      <trans-unit id="Kn6OsqL" resname="Your card seems to have expired, check the date (Y/m), or try another card">
+        <source>Your card seems to have expired, check the date (Y/m), or try another card</source>
+        <target>Tu tarjeta parece haber expirado, comprueba la fecha (Y/m), o prueba otra tarjeta</target>
+      </trans-unit>
+      <trans-unit id="DBlinDE" resname="Owner name">
+        <source>Owner name</source>
+        <target>Nombre del titular</target>
+      </trans-unit>
+      <trans-unit id="jRmbHQa" resname="Owner surname">
+        <source>Owner surname</source>
+        <target>Apellidos del titular</target>
+      </trans-unit>
+      <trans-unit id="jRmbHQB" resname="Card number">
+        <source>Card number</source>
+        <target>Numero de la tarjeta</target>
+      </trans-unit>
+      <trans-unit id="jRmbHQc" resname="Card Verification Value">
+        <source>Card Verification Value</source>
+        <target>Clave de verificación</target>
+      </trans-unit>
+      <trans-unit id="TTgOFMC" resname="Exceeded limit, between 1 and 64 characters">
+        <source>Exceeded limit, between 1 and 64 characters</source>
+        <target>Limite excedido, entre 1 y 64 caracteres</target>
+      </trans-unit>
+      <trans-unit id="MsQZK0n" resname="A credit card must have at least 13 digits">
+        <source>A credit card must have at least 13 digits</source>
+        <target>Una tarjeta de crédito debe tener al menos 13 dígitos</target>
+      </trans-unit>
+      <trans-unit id="3QU3t3V" resname="Exceeded limit, a credit card has between 13 and 18 digits">
+        <source>Exceeded limit, a credit card has between 13 and 18 digits</source>
+        <target>Límite excedido, una tarjeta tiene entre 13 y 18 dígitos</target>
+      </trans-unit>
+      <trans-unit id="VJXFjbk" resname="It's connected">
+        <source>It's connected</source>
+        <target>Está conectado</target>
+      </trans-unit>
+      <trans-unit id="PbZfjCp" resname="Navigation">
+        <source>Navigation</source>
+        <target>Navegación</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="aXUvIxO" resname="News">
+        <source>News</source>
+        <target>Noticias</target>
+      </trans-unit>
+      <trans-unit id="vhCy_QX" resname="Coming Soon">
+        <source>Coming Soon</source>
+        <target>Lanzamientos</target>
+      </trans-unit>
+      <trans-unit id="Vu_PIJV" resname="Address">
+        <source>Address</source>
+        <target>Dirección</target>
+      </trans-unit>
+      <trans-unit id="Lw5khcp" resname="Granada, Andalucía, Spain">
+        <source>Granada, Andalucía, Spain</source>
+        <target>Granada, Andalucía, España</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Contacto</target>
+      </trans-unit>
+      <trans-unit id="wGV0jlC" resname="and other amazing advantages are reserved to premium users">
+        <source>and other amazing advantages are reserved to premium users</source>
+        <target>y otras ventajas increíbles están reservados a usuarios premium</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

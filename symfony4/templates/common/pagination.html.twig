@@ -1,0 +1,43 @@
+{% if maxPages is defined and maxPages > 1 %}
+    
+    {#
+        When pagination is not made by Ajax
+        ID attribute must be specified
+        
+        We check if activeitem exists so we can
+        add the value to the id attribute.
+        
+        id : (activeitem is defined) 
+            ? activeitem.id : ''
+    #}
+    
+    <div class="pagination">
+        <ul>
+            {%if currentPage > 1 %}
+                <li>
+                    <a class="{%if isAjaxPaginator%}js-paginationLink{%endif%}" 
+                    data-newpage="{{currentPage-1 < 1 ? 1 : currentPage-1}}" 
+                    href="{{ path(currentPath, { page: currentPage-1 < 1 ? 1 : currentPage-1, id: (activeitem is defined) ? activeitem.id : '' }) }}{% if formhelper is defined and formhelper %}{{formhelper}}{% endif %}">
+                        &lharu;
+                    </a>
+                </li>
+            {% endif %}
+            {% for i in 1..maxPages %}
+                <li class="{{ (i in currentPage) ? 'current' : '' }}">
+                    <a class="{%if isAjaxPaginator%}js-paginationLink{%endif%}" 
+                    data-newpage="{{i}}" 
+                    href="{{ path(currentPath, {page: i, id: (activeitem is defined) ? activeitem.id : '' }) }}{% if formhelper is defined and formhelper %}{{formhelper}}{% endif %}">
+                        {{ i }}
+                    </a>
+                </li>
+            {% endfor %}
+            {%if currentPage < maxPages %}
+            <li>
+                <a class="{%if isAjaxPaginator%}js-paginationLink{%endif%}" 
+                data-newpage="{{currentPage+1 <= maxPages ? currentPage+1 : currentPage}}" 
+                href="{{ path(currentPath, {page: currentPage+1 <= maxPages ? currentPage+1 : currentPage, id: (activeitem is defined) ? activeitem.id : ''}) }}{% if formhelper is defined and formhelper %}{{formhelper}}{% endif %}">&rharu;</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+{% endif %}

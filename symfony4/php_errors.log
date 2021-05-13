@@ -1,0 +1,563 @@
+[05-Apr-2019 20:14:59 UTC] PHP Fatal error:  Cannot redeclare App\Service\SessionManager::__construct() in /home/ubuntu/workspace/symfony4/src/Service/SessionManager.php on line 44
+[05-Apr-2019 20:15:04 UTC] PHP Fatal error:  Cannot redeclare App\Service\SessionManager::__construct() in /home/ubuntu/workspace/symfony4/src/Service/SessionManager.php on line 44
+[05-Apr-2019 20:15:47 UTC] PHP Fatal error:  Cannot redeclare App\Service\SessionManager::__construct() in /home/ubuntu/workspace/symfony4/src/Service/SessionManager.php on line 44
+[09-Apr-2019 09:30:29 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerQd5mTDx\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:30:30 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerQd5mTDx\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:31:08 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerQd5mTDx\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:31:13 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerQd5mTDx\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerQd5mTDx/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:35:03 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRq2ShgZ\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:35:52 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRq2ShgZ\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:35:54 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRq2ShgZ\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php on line 15
+[09-Apr-2019 09:36:12 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "TiempoVideoAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRq2ShgZ\srcApp_KernelDevDebugContainer->{closure}('admin.tiempoadm...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.tiempoadm...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.tiempoadm...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfon in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRq2ShgZ/getAdmin_TiempoadminService.php on line 15
+[10-Apr-2019 14:06:30 UTC] PHP Fatal error:  Cannot use Symfony\Component\Form\Extension\Core\Type\UrlType as UrlType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 14
+[10-Apr-2019 14:06:30 UTC] PHP Fatal error:  Cannot use Symfony\Component\Form\Extension\Core\Type\UrlType as UrlType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 14
+[10-Apr-2019 14:06:53 UTC] PHP Fatal error:  Cannot use Symfony\Component\Form\Extension\Core\Type\UrlType as UrlType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 14
+[10-Apr-2019 14:06:53 UTC] PHP Fatal error:  Cannot use Symfony\Component\Form\Extension\Core\Type\UrlType as UrlType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 14
+[22-Apr-2019 00:23:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 53
+[22-Apr-2019 00:27:35 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 53
+[22-Apr-2019 00:34:10 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 53
+[22-Apr-2019 00:37:15 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 53
+[22-Apr-2019 00:39:11 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 53
+[22-Apr-2019 19:43:38 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRBc0MKT/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRBc0MKT\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRBc0MKT/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:43:50 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRBc0MKT/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRBc0MKT\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRBc0MKT/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:43:52 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRBc0MKT/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): ContainerRBc0MKT\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/ContainerRBc0MKT/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:43:55 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:44:02 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:44:18 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:44:25 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:44:26 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:44:33 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[22-Apr-2019 19:44:53 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "PeliculaAdmin" from namespace "App\Admin".
+Did you forget a "use" statement for another namespace? in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/dependency-injection/Container.php(225): Container5xM7fPX\srcApp_KernelDevDebugContainer->{closure}('admin.peliculad...', 1)
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/Pool.php(303): Symfony\Component\DependencyInjection\Container->get('admin.peliculad...')
+#2 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Route/AdminPoolLoader.php(60): Sonata\AdminBundle\Admin\Pool->getInstance('admin.peliculad...')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/config/Loader/FileLoader.php(151): Sonata\AdminBundle\Route\AdminPoolLoader->load('.', 'sonata_admin')
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/ in /home/ubuntu/workspace/symfony4/var/cache/dev/Container5xM7fPX/getAdmin_PeliculadataService.php on line 15
+[23-Apr-2019 01:59:16 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 01:59:17 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 02:00:54 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 02:00:55 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 06:14:05 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 06:14:09 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 06:46:11 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 06:46:15 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 07:05:35 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 07:05:37 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 07:06:39 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[23-Apr-2019 07:06:40 UTC] PHP Fatal error:  Class 'App\Repository\EntityRepository' not found in /home/ubuntu/workspace/symfony4/src/Repository/EstadoVideoRepository.php on line 15
+[26-Apr-2019 07:15:38 UTC] PHP Fatal error:  Cannot redeclare App\Entity\Video::$src in /home/ubuntu/workspace/symfony4/src/Entity/Video.php on line 43
+[26-Apr-2019 18:40:22 UTC] PHP Fatal error:  Cannot redeclare App\Repository\VideoRepository::findByUserComplete() in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 78
+[26-Apr-2019 18:53:59 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:71
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 71
+[26-Apr-2019 18:53:59 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 71
+[26-Apr-2019 19:00:35 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:71
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 71
+[26-Apr-2019 19:00:35 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 71
+[26-Apr-2019 19:01:28 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:71
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 71
+[26-Apr-2019 19:01:28 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 132124672 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 71
+[26-Apr-2019 19:04:24 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 66
+[26-Apr-2019 19:04:24 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 66
+[26-Apr-2019 22:12:15 UTC] PHP Fatal error:  Method Doctrine\ORM\Query\Expr\Comparison::__toString() must not throw an exception, caught ErrorException: Catchable Fatal Error: Object of class DateTime could not be converted to string in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php on line 0
+[27-Apr-2019 13:55:20 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:20 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 201314304 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:42 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:42 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 132124672 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:46 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:46 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 266342400 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:58 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): App\Controller\OverviewController->index()
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/symfony4/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 13:55:58 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home/ubuntu/workspace/symfony4/src/Controller/OverviewController.php on line 74
+[27-Apr-2019 18:08:41 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Repository/GrupoRepository.php on line 66
+[27-Apr-2019 18:08:42 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Repository/GrupoRepository.php on line 66
+[27-Apr-2019 18:48:24 UTC] PHP Fatal error:  Can't use method return value in write context in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 90
+[28-Apr-2019 19:48:49 UTC] PHP Fatal error:  Cannot redeclare App\Service\ValidationService::regexNameSense() in /home/ubuntu/workspace/symfony4/src/Service/ValidationService.php on line 107
+[28-Apr-2019 19:48:49 UTC] PHP Fatal error:  Cannot redeclare App\Service\ValidationService::regexNameSense() in /home/ubuntu/workspace/symfony4/src/Service/ValidationService.php on line 107
+[29-Apr-2019 17:43:37 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::indexAccount() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 76
+[30-Apr-2019 20:52:15 UTC] PHP Fatal error:  Cannot declare class App\Form\EditAccountFormType, because the name is already in use in /home/ubuntu/workspace/symfony4/src/Form/PaymentFormType.php on line 0
+[30-Apr-2019 20:52:32 UTC] PHP Fatal error:  Cannot declare class App\Form\EditAccountFormType, because the name is already in use in /home/ubuntu/workspace/symfony4/src/Form/PaymentFormType.php on line 0
+[30-Apr-2019 20:52:32 UTC] PHP Fatal error:  Cannot declare class App\Form\EditAccountFormType, because the name is already in use in /home/ubuntu/workspace/symfony4/src/Form/PaymentFormType.php on line 0
+[03-May-2019 14:59:06 UTC] PHP Fatal error:  Cannot redeclare App\Service\MailManager::sendPasswordChangeEmail() in /home/ubuntu/workspace/symfony4/src/Service/MailManager.php on line 48
+[03-May-2019 14:59:07 UTC] PHP Fatal error:  Cannot redeclare App\Service\MailManager::sendPasswordChangeEmail() in /home/ubuntu/workspace/symfony4/src/Service/MailManager.php on line 48
+[05-May-2019 13:12:42 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 23
+[05-May-2019 13:12:43 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 23
+[05-May-2019 13:17:39 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 23
+[05-May-2019 13:17:40 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 23
+[05-May-2019 13:17:57 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 0
+[05-May-2019 13:17:58 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 0
+[05-May-2019 13:18:07 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 0
+[05-May-2019 13:18:07 UTC] PHP Fatal error:  Declaration of App\Admin\UsuarioAdmin::postUpdate($user, App\Service\MailManager $mail) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::postUpdate($object) in /home/ubuntu/workspace/symfony4/src/Admin/UsuarioAdmin.php on line 0
+[05-May-2019 13:39:54 UTC] PHP Fatal error:  Access level to App\Entity\Director::$titulo must be protected (as in class App\Entity\Contenido) or weaker in /home/ubuntu/workspace/symfony4/src/Entity/Director.php on line 0
+[05-May-2019 18:20:35 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php:447
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/AbstractAdmin.php(665): App\Admin\VideoAdmin->preUpdate(Object(App\Entity\Video))
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Controller/CRUDController.php(355): Sonata\AdminBundle\Admin\AbstractAdmin->update(Object(App\Entity\Video))
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): Sonata\AdminBundle\Controller\CRUDController->editAction('8')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#5 / in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 447
+[05-May-2019 18:20:35 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 134205440 bytes) in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 447
+[05-May-2019 18:21:43 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php:446
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/AbstractAdmin.php(665): App\Admin\VideoAdmin->preUpdate(Object(App\Entity\Video))
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Controller/CRUDController.php(355): Sonata\AdminBundle\Admin\AbstractAdmin->update(Object(App\Entity\Video))
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): Sonata\AdminBundle\Controller\CRUDController->editAction('8')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#5 / in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 446
+[05-May-2019 18:21:43 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 148901888 bytes) in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 446
+[05-May-2019 18:23:27 UTC] PHP Warning:  Uncaught ErrorException: Warning: var_export does not handle circular references in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php:438
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Admin/AbstractAdmin.php(686): App\Admin\VideoAdmin->prePersist(Object(App\Entity\Video))
+#1 /home/ubuntu/workspace/symfony4/vendor/sonata-project/admin-bundle/src/Controller/CRUDController.php(619): Sonata\AdminBundle\Admin\AbstractAdmin->create(Object(App\Entity\Video))
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(150): Sonata\AdminBundle\Controller\CRUDController->createAction()
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/HttpKernel.php(67): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#5 / in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 438
+[05-May-2019 18:23:27 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 266342400 bytes) in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 438
+[05-May-2019 23:37:04 UTC] PHP Warning:  Uncaught ErrorException: Notice: Array to string conversion in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php(58): Doctrine\ORM\Query\Expr\Func->__toString()
+#1 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php(45): Doctrine\ORM\Query\Expr\Composite->processQueryPart(Object(Doctrine\ORM\Query\Expr\Func))
+#2 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(1436): Doctrine\ORM\Query\Expr\Composite->__toString()
+#3 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(1413): Doctrine\ORM\QueryBuilder->_getReducedDQLQueryPart('where', Array)
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(326): Doctrine\ORM\QueryBuilder->_getDQLForSelect()
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php on line 76
+[05-May-2019 23:37:04 UTC] PHP Fatal error:  Object of class App\Entity\Video could not be converted to string in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php on line 76
+[05-May-2019 23:37:59 UTC] PHP Warning:  Uncaught ErrorException: Notice: Array to string conversion in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php(58): Doctrine\ORM\Query\Expr\Func->__toString()
+#1 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php(45): Doctrine\ORM\Query\Expr\Composite->processQueryPart(Object(Doctrine\ORM\Query\Expr\Func))
+#2 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(1436): Doctrine\ORM\Query\Expr\Composite->__toString()
+#3 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(1413): Doctrine\ORM\QueryBuilder->_getReducedDQLQueryPart('where', Array)
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(326): Doctrine\ORM\QueryBuilder->_getDQLForSelect()
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php on line 76
+[05-May-2019 23:37:59 UTC] PHP Fatal error:  Object of class App\Entity\Video could not be converted to string in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php on line 76
+[05-May-2019 23:40:34 UTC] PHP Warning:  Uncaught ErrorException: Notice: Array to string conversion in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php(58): Doctrine\ORM\Query\Expr\Func->__toString()
+#1 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Composite.php(45): Doctrine\ORM\Query\Expr\Composite->processQueryPart(Object(Doctrine\ORM\Query\Expr\Func))
+#2 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(1436): Doctrine\ORM\Query\Expr\Composite->__toString()
+#3 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(1413): Doctrine\ORM\QueryBuilder->_getReducedDQLQueryPart('where', Array)
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php(326): Doctrine\ORM\QueryBuilder->_getDQLForSelect()
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php on line 76
+[05-May-2019 23:40:34 UTC] PHP Fatal error:  Object of class App\Entity\Video could not be converted to string in /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr/Func.php on line 76
+[06-May-2019 11:48:47 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 146
+[06-May-2019 12:02:48 UTC] PHP Fatal error:  Cannot use Sonata\CoreBundle\Form\Type\DateTimePickerType as DateTimePickerType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 25
+[06-May-2019 12:34:45 UTC] PHP Fatal error:  Cannot use Sonata\Form\Type\DatePickerType as DatePickerType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/VideoAdmin.php on line 23
+[07-May-2019 14:19:44 UTC] PHP Fatal error:  Cannot use Sonata\AdminBundle\Form\Type\ModelListType as ModelListType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/EstadoVideoAdmin.php on line 16
+[07-May-2019 14:19:45 UTC] PHP Fatal error:  Cannot use Sonata\AdminBundle\Form\Type\ModelListType as ModelListType because the name is already in use in /home/ubuntu/workspace/symfony4/src/Admin/EstadoVideoAdmin.php on line 16
+[07-May-2019 16:35:07 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:36:32 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:40:36 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:40:51 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:41:16 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:41:32 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:41:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:42:02 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:42:19 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:42:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:43:03 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:43:15 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:43:56 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:47:58 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:48:15 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:49:40 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 16:50:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[07-May-2019 17:02:49 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[08-May-2019 09:34:44 UTC] PHP Fatal error:  Declaration of App\Admin\DirectorAdmin::validate(App\Admin\ErrorElement $errorElement, $object) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::validate(Sonata\Form\Validator\ErrorElement $errorElement, $object) in /home/ubuntu/workspace/symfony4/src/Admin/DirectorAdmin.php on line 17
+[08-May-2019 09:34:45 UTC] PHP Fatal error:  Declaration of App\Admin\DirectorAdmin::validate(App\Admin\ErrorElement $errorElement, $object) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::validate(Sonata\Form\Validator\ErrorElement $errorElement, $object) in /home/ubuntu/workspace/symfony4/src/Admin/DirectorAdmin.php on line 17
+[08-May-2019 09:38:16 UTC] PHP Fatal error:  Declaration of App\Admin\ProductorAdmin::validate(App\Admin\ErrorElement $errorElement, $object) must be compatible with Sonata\AdminBundle\Admin\AbstractAdmin::validate(Sonata\Form\Validator\ErrorElement $errorElement, $object) in /home/ubuntu/workspace/symfony4/src/Admin/ProductorAdmin.php on line 0
+[14-May-2019 00:10:28 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[14-May-2019 20:23:45 UTC] PHP Fatal error:  Uncaught ErrorException: Notice: Array to string conversion in /home/ubuntu/workspace/symfony4/src/Entity/Grupo.php:81
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/var/cache/dev/doctrine/orm/Proxies/__CG__AppEntityGrupo.php(217): App\Entity\Grupo->getRoute()
+#1 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Extension/CoreExtension.php(1681): Proxies\__CG__\App\Entity\Grupo->getRoute()
+#2 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Environment.php(418) : eval()'d code(623): twig_get_attribute(Object(Twig\Environment), Object(Twig\Source), Object(Proxies\__CG__\App\Entity\Grupo), 'getRoute', Array)
+#3 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Template.php(184): __TwigTemplate_b95da542f75db3b991bf6f39598db56c9c98cd679577685d5fb9aff0a3815688->block_body(Array, Array)
+#4 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Environment.php(418) : eval()'d code(71): Twig\Template->displayBlock('body', Array, Array)
+#5 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Template.php(379) in /home/ubuntu/workspace/symfony4/src/Entity/Grupo.php on line 81
+[14-May-2019 20:25:56 UTC] PHP Fatal error:  Uncaught ErrorException: Notice: Array to string conversion in /home/ubuntu/workspace/symfony4/src/Entity/Grupo.php:81
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/var/cache/dev/doctrine/orm/Proxies/__CG__AppEntityGrupo.php(217): App\Entity\Grupo->getRoute()
+#1 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Extension/CoreExtension.php(1681): Proxies\__CG__\App\Entity\Grupo->getRoute()
+#2 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Environment.php(418) : eval()'d code(623): twig_get_attribute(Object(Twig\Environment), Object(Twig\Source), Object(Proxies\__CG__\App\Entity\Grupo), 'getRoute', Array)
+#3 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Template.php(184): __TwigTemplate_b95da542f75db3b991bf6f39598db56c9c98cd679577685d5fb9aff0a3815688->block_body(Array, Array)
+#4 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Environment.php(418) : eval()'d code(71): Twig\Template->displayBlock('body', Array, Array)
+#5 /home/ubuntu/workspace/symfony4/vendor/twig/twig/src/Template.php(379) in /home/ubuntu/workspace/symfony4/src/Entity/Grupo.php on line 81
+[15-May-2019 17:33:29 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:34:06 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:35:13 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:36:13 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:39:31 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:39:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:40:16 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:42:14 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:43:40 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:44:31 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:45:11 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/ObjectNormalizer.php on line 72
+[15-May-2019 17:46:38 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:47:19 UTC] PHP Warning:  Uncaught Exception: Serialization of 'Closure' is not allowed in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php:542
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php(542): serialize(Array)
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php(518): Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer->getCacheKey('json', Array)
+#2 /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php(157): Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer->createChildContext(Array, 'videos', 'json')
+#3 /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Serializer.php(152): Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer->normalize(Object(Proxies\__CG__\App\Entity\Temporada), 'json', Array)
+#4 /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Serializer.php(162): Sym in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:47:19 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 17:48:26 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:06:15 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:06:52 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:15:54 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:40:11 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:40:29 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:40:51 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:41:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:42:51 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:43:29 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 18:46:17 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:05:22 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:05:51 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:07:54 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:08:28 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:09:23 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:11:23 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:11:57 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:13:38 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:14:37 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:15:35 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:16:30 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:19:50 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:37:07 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:38:07 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:41:39 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:44:27 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:45:22 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:47:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:48:31 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:49:29 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:49:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:50:27 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 19:51:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:00:22 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:00:58 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:02:05 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:12:25 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:16:40 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:23:10 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:25:17 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:27:53 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:28:23 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:29:44 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:30:30 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:30:57 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:31:16 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:36:19 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:36:45 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:39:05 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:51:32 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:56:19 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:57:14 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 20:58:10 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:01:15 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:08:43 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:09:34 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:10:09 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:11:29 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:12:29 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:12:54 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:16:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/serializer/Normalizer/AbstractObjectNormalizer.php on line 542
+[15-May-2019 21:18:21 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 4096 bytes) in /home/ubuntu/workspace/symfony4/vendor/symfony/property-access/PropertyAccessor.php on line 372
+[19-May-2019 09:04:10 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::accountBilling() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 168
+[19-May-2019 09:04:14 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::accountBilling() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 168
+[21-May-2019 14:22:32 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::accountBilling() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 168
+[21-May-2019 14:22:33 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::accountBilling() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 168
+[21-May-2019 14:25:03 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::accountBilling() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 168
+[21-May-2019 14:25:04 UTC] PHP Fatal error:  Cannot redeclare App\Controller\AccountController::accountBilling() in /home/ubuntu/workspace/symfony4/src/Controller/AccountController.php on line 168
+[21-May-2019 19:51:42 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '}', expecting '(' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:121
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 121
+[21-May-2019 19:51:44 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '}', expecting '(' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:121
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 121
+[21-May-2019 19:51:58 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '}', expecting '(' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:121
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 121
+[21-May-2019 19:51:59 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '}', expecting '(' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:121
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 121
+[21-May-2019 19:53:43 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:123
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctri in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 123
+[21-May-2019 19:53:44 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:123
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctri in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 123
+[21-May-2019 19:53:57 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:123
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctri in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 123
+[21-May-2019 19:53:59 UTC] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php:123
+Stack trace:
+#0 /home/ubuntu/workspace/symfony4/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/symfony4/vendor/symfony/debug/DebugClassLoader.php(162): Composer\Autoload\ClassLoader->loadClass('App\\Entity\\Temp...')
+#2 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Entity\\Temp...')
+#3 [internal function]: spl_autoload_call('App\\Entity\\Temp...')
+#4 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1028): class_exists('App\\Entity\\Temp...')
+#5 /home/ubuntu/workspace/symfony4/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#6 /home/ubuntu/workspace/symfony4/vendor/doctri in /home/ubuntu/workspace/symfony4/src/Entity/Temporada.php on line 123
+[21-May-2019 22:13:15 UTC] PHP Fatal error:  Cannot redeclare App\Repository\VideoRepository::findNextVideo() in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 313
+[21-May-2019 22:13:15 UTC] PHP Fatal error:  Cannot redeclare App\Repository\VideoRepository::findNextVideo() in /home/ubuntu/workspace/symfony4/src/Repository/VideoRepository.php on line 313
+[05-Jun-2019 22:55:00 UTC] PHP Warning:  require(/home/ubuntu/workspace/symfony4/vendor/composer/../sonata-project/block-bundle/src/Resources/stubs/symfony2.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/symfony4/vendor/composer/autoload_real.php on line 66
+[05-Jun-2019 22:55:00 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/symfony4/vendor/composer/../sonata-project/block-bundle/src/Resources/stubs/symfony2.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/symfony4/vendor/composer/autoload_real.php on line 66
+[08-Jun-2019 16:27:59 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:27:59 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:00 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:00 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:00 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:01 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:03 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:08 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:18 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:28 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:38 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:49 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:28:58 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:29:09 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:29:19 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:29:29 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:29:39 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:29:48 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:29:58 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:08 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:19 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:20 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:21 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:21 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:21 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:21 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:22 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:22 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:22 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:29 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:38 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:46 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:47 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:48 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:30:59 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:31:08 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:31:18 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34
+[08-Jun-2019 16:31:28 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/symfony4/src/Twig/NameHelperExtension.php on line 34

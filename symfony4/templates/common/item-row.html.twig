@@ -1,0 +1,18 @@
+<div class="item-row" data-eid="{{evid.id}}">
+    <div class="thumb-slide content-item" style="background-image: url({{ evid.video.thumbsrc }});">
+        <a href="{{ path('capsule_vid', {'vid' : evid.video.id }) }}"></a>
+        <div class="progressbar">
+            <div class="back"></div>
+            <div class="front" style="width: {{evid.porcentaje}}%;"></div>
+        </div>
+    </div>
+    <div class="info-item">
+        <p class="item-title">{{ videotitle(evid.video) }}</p>
+        <p class="item-summary">{{ evid.video.descripcion }}</p>
+    </div>
+    <div class="time align-right">
+        <p>{{ evid.porcentaje }}%</p>
+        <p>{{ evid.tiempo|date('H:i:s') }} - {{ evid.tiempototal|date('H:i:s') }}</p>
+        <a href="#" class="js-removeHistory a-capsule">&#10005;</a>
+    </div>
+</div>

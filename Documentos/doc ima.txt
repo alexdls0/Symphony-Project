@@ -1,0 +1,91 @@
+install phpmyadmin
+add twig and doctrine to symfony (comprobar)
+htaccess file con composer
+enrutador por anotaciones compose
+
+CMDLIST:
+twig install: composer require twig / composer require twig-bundle (DONE)
+doctrine install: composer require doctrine/doctrine-bundle (DONE)
+htaccess overwrite: composer require symfony/apache-pack (DONE)
+annotation routing: DONE
+filesystem helper: composer require symfony/filesystem (DONE)
+phpmyadmin: username superwave password none
+
+
+
+
+
+Proceso de creación DB:
+php bin/console doctrine:database:create (DONE)
+php bin/console make:entity (DONE)
+php bin/console make:migration (DONE)
+php bin/console doctrine:migrations:migrate (DONE)
+
+
+SONATA ADMIN PANEL:
+composer require sonata-project/admin-bundle (DONE)
+composer require sonata-project/doctrine-orm-admin-bundle (DONE)
+
+Sonata config: config/services.yaml
+Sonata objects: src/admin/*
+
+Videojs: (Ver node_modules)
+
+SERIALIZAR:
+composer require symfony/serializer
+
+
+
+
+
+
+
+PROGRESO GENERAL -> IM===============
+/login (Done)
+/register (Done)
+/payment (DONE)
+/payment/confirmed (DONE)
+
+/account (DONE)
+    /account/billing (DONE),
+    /account/history (DONE),
+    /account/favourites (DONE),
+
+/director (OK),
+/category(OK),
+/saga (OK)
+/producer (OK),
+    
+    
+MAYOR CUIDADO =================
+/ (Done) ARREGLAR QUERIES
+/video + OMDB API (DOING)
+/Browse (DONE) + Query slight fix
+
+
+
+Details====
+/show -> Pagination is set at 1
+
+
+
+-Meter campo orden en video para saber el número que le corresponde a ese episodio, hay
+que tener en cuenta que:
+--Pueden existir varios episodios con el mismo orden siempre y cuando pertenezcan a diferentes
+temporadas.
+--El campo orden puede ser null en caso de que sean películas o vídeos sueltos, debido
+a que un video que pertenezca a un grupo serie debe tener temporada obligatoriamente.
+--Otra opción es la que dijimos de mostrar los de la misma temporada y en orden de online
+
+
+
+
+CAMPOS OMDB =======================
+  "Writer" => "Anthony McCarten (story by), Peter Morgan (story by), Anthony McCarten (screenplay by)"
+  "Actors" => "Rami Malek, Lucy Boynton, Gwilym Lee, Ben Hardy"
+  "Language" => "English"
+  "Poster" => "https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_SX300.jpg"
+  "Ratings" => array:3 [▶]
+  "DVD" => "12 Feb 2019"
+  "BoxOffice" => "N/A"
+  "Website" => "http://www.bohemianrhapsody.com"

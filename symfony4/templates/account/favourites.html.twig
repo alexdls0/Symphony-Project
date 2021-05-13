@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Favourites'|trans}} | Capsule{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        
+        {% include 'common/nav-logged.html.twig' %}
+        <div class="account-tab-header left-padding-5">
+            <div><h1 class="tab-header active" data-tab="tab-1">{{'FAVOURITES'|trans}}</h1></div>
+        </div>
+        <div class="tab-content active " id="tab-1">
+            <div class="tab-wrapper">
+                <div class="xs-padding-left b-left left-5">
+                    <h2 class="nickname">@{{app.user.apodo}}</h2>
+                    <p class="advice">
+                        {{'here you have the videos you have saved in your list.'|trans}}
+                    </p>
+                    {% if favoritos|length > 0 %}
+                        <button id="js-removeAllFav" class="btn-capsule btn-small" type="button">{{'Clear all'|trans}}</button>
+                    {% endif %}
+                </div>
+            </div>
+            {% if favoritos|length > 0 %}
+                <div class="fav-container">
+                    {% for video in favoritos %}
+                        <div class="content-item" data-vid="{{video.id}}" style="background-image:url('{{ video.thumbsrc }}');">
+                            <a href="{{ (video.grupo) ? path(video.grupo.getRoute(), {'id' : video.grupo.id }) : path('capsule_vid', {'vid' : video.id }) }}">
+                                {% if video.grupo is not null %}
+                                    <p>{{video.grupo.titulo}}</p>
+                                {% else %}
+                                    <p>{{video.titulo}}</p>
+                                {% endif %}
+                            </a> 
+                            <div class="fav-heart js-removeFav absolute-fav">
+                                <i class="fas fa-heart press heart-icon"></i>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% include 'common/pagination.html.twig' %}
+            {% else %}
+                    {% include 'common/not-found.html.twig' with {'message': 'We have not found any saved favourites'} %}
+            {% endif %}
+        </div>
+        {% include 'common/footer.html.twig' %}
+    </div>
+    
+{% endblock %}
+
+{% block javascripts %}
+    <script src='/assets/js/account/fav.js' defer></script>
+{% endblock %}
+

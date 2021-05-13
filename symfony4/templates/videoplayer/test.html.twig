@@ -1,0 +1,284 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ videotitle( videodata ) }} | {{'Capsule Player'|trans}}{% endblock %}
+
+{% block stylesheets %}
+  {% if premiumstatus and agestatus and releasestatus %}
+	<!-- Shaka Player -->
+	<link rel="stylesheet" type="text/css" href="{{ asset( '/assets/node_modules/shaka-player/dist/controls.css' ) }}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- /Shaka Player -->
+  {% endif %}
+{% endblock %}
+
+{% block body %}
+	<script>
+		{# 
+		 # Need to always have the video id in case the user wants to add
+		 # the video to the fav list, even if the video is not released yet
+		 #}
+		vid = {{ videodata.id }};
+	</script>
+	<div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+    	{% include 'common/nav-invideo.html.twig' %}
+        <div class="firstScreen full-wh flex-center video-container" id="firstScreen">
+			{% if premiumstatus and agestatus and releasestatus %}
+				<video style="width: 100%; height: 100%" id="thevideo" poster="{{videodata.thumbsrc}}" autoplay data-shaka-player></video>
+			{% elseif releasestatus == false %}
+				<!-- Not released -->
+				<div class="slide full-wh not-released not-clickable" style="background-image: url({{videodata.thumbsrc}});">
+                    <div class="bg-fade">
+                        <div class="item-info">
+                            <div class="title-div">
+                                <p>{{'Coming soon: '|trans}}</p>
+                                <h1 class="title">
+                                	{{ videodata.getFechaonlineString }}
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% elseif ( premiumstatus == false ) or ( agestatus == false ) or ( releasestatus == false )%}
+            	<div class="slide full-wh people not-clickable">
+                    <div class="blur-bg full-wh" style="background-image: url({{videodata.thumbsrc}});"></div>
+                    <div class="bg-fade payment-section column">
+                    	{% if premiumstatus == false %}
+	                    	<div class="payment-steps">
+	                        	<a class="payment-step" href="{{ path( 'capsule_pay' ) }}">
+		                        	<img src="{{ asset( 'assets/img/white-payment1.png' ) }}">
+		                        	<p>{{'Pay with Capsule Pay'|trans}}</p>
+		                        </a>
+		                        <a class="payment-step" href="{{ path( 'capsule_pay' ) }}">
+		                        	<img src="{{ asset( 'assets/img/white-payment2.png' ) }}">
+		                        	<p>{{'Secure Payment'|trans}}</p>
+		                        </a>
+		                        <a class="payment-step" href="{{ path( 'capsule_pay' ) }}">
+		                        	<img src="{{ asset( 'assets/img/white-payment3.png' ) }}">
+		                        	<p>{{'Membership activated'|trans}}</p>
+		                        </a>
+	                        </div>
+                        {% endif %}
+                    	<div class="warning">
+                    		<h2 class="nickname">@{{app.user.apodo}}</h2>
+                    		
+                    		{%  if agestatus == false %}
+	                        <p>{{'We are sorry, this content requires minimum age +'|trans}}{{ videodata.edad }}</p>
+	                        {% endif %}
+	                        
+                    		{% if premiumstatus == false %}
+                    			<p>{{ videotitle( videodata ) }} {{'and other amazing advantages are reserved to premium users'|trans}}</p>
+                    		{% endif %}
+                    	</div>
+                    </div>
+                </div>
+            {% elseif agestatus == false %}
+            	<!-- Not minimum age -->
+				<div class="slide full-wh not-released not-clickable" style="background-image: url({{videodata.thumbsrc}});">
+                    <div class="bg-fade">
+                        <div class="item-info">
+                            <div class="title-div align-left">
+                            	<h1>+{{ videodata.edad }}</h1>
+                                <p>{{'We are sorry, this content requires minimum age'|trans}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% elseif premiumstatus == false %}
+            	<div class="slide full-wh people not-clickable">
+                    <div class="blur-bg full-wh" style="background-image: url({{videodata.thumbsrc}});"></div>
+                    <div class="bg-fade payment-section">
+                        <p>{{ videotitle( videodata ) }} {{'and other amazing advantages are reserved to premium users'|trans}}</p>
+                        <div class="payment-steps">
+                        	<a class="payment-step" href="{{ path( 'capsule_pay' ) }}">
+	                        	<img src="{{ asset( 'assets/img/white-payment1.png' ) }}">
+	                        	<p>{{'Pay with Capsule Pay'|trans}}</p>
+	                        </a>
+	                        <a class="payment-step" href="{{ path( 'capsule_pay' ) }}">
+	                        	<img src="{{ asset( 'assets/img/white-payment2.png' ) }}">
+	                        	<p>{{'Secure Payment'|trans}}</p>
+	                        </a>
+	                        <a class="payment-step" href="{{ path( 'capsule_pay' ) }}">
+	                        	<img src="{{ asset( 'assets/img/white-payment3.png' ) }}">
+	                        	<p>{{'Membership activated'|trans}}</p>
+	                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+            {% endif %}
+		</div>
+		<!-- end first video box -->
+		<div class="video-info {% if videodata.temporada is not defined %}col-flex{% endif %}">
+			
+			{% if releasestatus %}
+			{% endif %}
+			
+			<!-- previous cap -->
+			<div class="prev-cap">
+				{% if prevideo %}
+					<p class="first-title">{{'Previous chapter'|trans}}</p>
+					<div class="content-item" style="background-image: url({{ prevideo.thumbsrc }});">
+						<a class="with-play-button" href="{{ path('capsule_vid', { vid: prevideo.id } ) }}">
+	                        <img class="play-button" src="{{asset('assets/img/playbutton.png')}}">
+	                    </a>
+					</div>
+				{% endif %}
+			</div>
+			
+			<!-- main block -->
+			<div class="current-cap main-info">
+				{% if videodata.temporada %}
+					<div id="js-info" class="ajax-info" 
+						data-this="{{videodata.temporada.id}}" 
+						data-parent="{{videodata.grupo.id}}">
+					</div>
+					<p class="first-title">
+						{{ videotitle( videodata ) }}
+					</p>
+					<p class="description">{{ videodata.descripcion }}</p>
+				{% else %}
+					<p class="first-title">{{ videodata.titulo }}</p>
+					<p class="description">{{ videodata.descripcion }}</p>
+				{% endif %}
+				<p class="description">
+					{{'Date: '|trans}}{{videodata.getFecharodadaString}}&nbsp;
+					{% if videodata.director %}
+					| {{'Director: '|trans}}<a href="{{ path ('capsule_browse_director', { id: videodata.director.id }) }}" class="link-underline">
+						{{ videodata.director }} 
+					</a>&nbsp;
+					{% endif %}
+					{% if videodata.productor %}
+					| {{'Producer: '|trans}}
+					<a href="{{ path ('capsule_browse_producer', { id: videodata.productor.id }) }}" class="link-underline">
+						{{ videodata.productor }} 
+					</a>&nbsp;
+					{% endif %}
+				</p>
+				{% if videodata.categorias|length %}
+				<p class="description">
+					{{'Categorias: '|trans}}
+					{% for cat in videodata.categorias %}
+						<a href="{{ path ('capsule_browse_category', { id: cat.id }) }}" class="link-underline">
+							{{ cat }}
+						</a>&nbsp;
+					{% endfor %}
+				</p>
+				{% endif %}
+				<div class="fav-heart pre-text" id="js-favourite">
+                    <i class="fas fa-heart {% if isfav %}press{% endif %} heart-icon"></i>
+                </div>
+				<div class="min-list" id="js-resultsSection"></div>
+				<div id="js-paginatorSection">	</div>
+				
+				<div class="omdb">
+					{% if omdbapi is defined and omdbapi.Response is not same as ('False') %}
+						<div id="accordion">
+			                <h3>{{'More information'|trans}}</h3>
+			                <div class="first omdb-info">
+			                	{% if omdbapi.Poster is defined and omdbapi.Poster is not same as ('N/A')%}
+			                		<img class="api-poster" src="{{ omdbapi.Poster }}">
+			                	{% endif %}
+			                    
+			                    <div class="meta {% if omdbapi.Poster is defined and omdbapi.Poster is same as ('N/A')%}
+			                    					meta-extend
+			                    				 {% endif%}">
+			                    	{% if omdbapi.Writer is defined %}
+			                    		<div class="account-info">
+			                    			<p>{{ omdbapi.Writer }}</p>
+			                    			<span>{{'Writer'|trans}}</span>
+			                    		</div>
+			                    	{% endif %}
+			                    	{% if omdbapi.Actors is defined %}
+			                    		<div class="account-info">
+			                    			<p>{{ omdbapi.Actors }}</p>
+			                    			<span>{{'Cast'|trans}}</span>
+			                    		</div>
+			                    	{% endif %}
+			                    	{% if omdbapi.Language is defined %}
+			                    		<div class="account-info">
+			                    			<p>{{omdbapi.Language}}</p>
+			                    			<span>{{'Original Language'|trans}}</span>
+			                    		</div>
+			                    	{% endif %}
+			                    	{% if omdbapi.DVD is defined %}
+			                    		<div class="account-info">
+			                    			<p>{{omdbapi.DVD}}</p>
+			                    			<span>{{'Physical release'|trans}}</span>
+			                    		</div>
+			                    	{% endif %}
+			                    	{% if omdbapi.BoxOffice is defined %}
+			                    		<div class="account-info">
+			                    			<p>{{omdbapi.BoxOffice}}</p>
+			                    			<span>{{'Box Office Perfomance'|trans}}</span>
+			                    		</div>
+			                    	{% endif %}
+			                    	{% if omdbapi.Website is defined %}
+			                    		<div class="account-info">
+			                    			<a href="{{omdbapi.Website}}"><p>{{omdbapi.Website}}</p></a>
+			                    			<span>{{'Official Website'|trans}}</span>
+			                    		</div>
+			                    	{% endif %}
+			                    	{% if omdbapi.Ratings is defined %}
+			                    		{% for rate in omdbapi.Ratings %}
+			                    			<div class="account-info">
+			                    				<p>{{ rate.Value }}</p>
+			                    				<span>{{ rate.Source }}</span>
+			                    			</div>
+			                    		{% endfor %}
+			                    	{% endif %}
+			                    	
+			                    </div>
+			                </div>
+			            </div>
+					{% endif %}
+				</div>
+				
+				
+				
+			</div>
+			
+			<!-- next cap -->
+			<div class="next-cap">
+				{% if nextvideo %}
+					<p class="first-title align-right">{{'Next chapter'|trans}}</p>
+					<div class="content-item" style="background-image: url({{ nextvideo.thumbsrc}})">
+						<a class="with-play-button" href="{{ path('capsule_vid', { vid: nextvideo.id } ) }}">
+	                        <img class="play-button" src="{{asset('assets/img/playbutton.png')}}">
+	                    </a>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+		
+		{% include 'common/footer.html.twig' %}
+	</div>
+  <!-- end -->
+{% endblock %}
+
+
+
+{% block javascriptsHeader %}
+{% if premiumstatus and agestatus and releasestatus %}
+  	<!-- Shaka Player -->
+  	<script>
+  		userLang='{{useraccount.videolang}}';
+		userLang = userLang.toLowerCase();
+		manifestUri = '{{videodata.src}}';
+  	</script>
+	<script src="{{asset('/assets/node_modules/shaka-player/third_party/closure/goog/base.js')}}" async></script>
+	<script src="{{asset('/assets/node_modules/shaka-player/lib/polyfill/all.js')}}" async></script>
+	<script src="{{asset('/assets/node_modules/shaka-player/dist/shaka-player.ui.js')}}" async></script>
+	<script src="{{asset('/assets/node_modules/shaka-player/dist/shaka-player.compiled.js')}}" async></script>
+	<script src="{{asset('/assets/js/videopage/mainShaka.js')}}" async defer></script>
+	<!-- /Shaka Player -->
+  {% endif %}
+  <script src="{{ asset( '/assets/js/videopage/seasonAjax.js' ) }}" async defer></script>
+  <script src="{{ asset( '/assets/js/videopage/favVideo.js' ) }}" defer></script>
+  
+{% endblock %}
